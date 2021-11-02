@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>RESISTIR</title>
+  <title>MIMED</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,14 +17,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Lumia - v4.6.0
@@ -72,10 +72,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Sistema de Informação para controlo de infecção inteligente e antibioterapia personalizada</h2>
+          <h2>Mining the Molecular Metric Space for Drug Design</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>RESISTIR</li>
+            <li>MIMED</li>
           </ol>
         </div>
 
@@ -89,19 +89,30 @@
         <p style="text-align:left;font-size:20px"><b>2016-2019</b></p>
         <p><b>Description:</b>
           <br>
-          O projeto RESISTIR pretende criar um sistema de informação inovador, modular, inteligente e adaptável para apoiar a tomada de decisão clínica no domínio da resistência aos antimicrobianos, controlo de infeção, vigilância epidemiológica e gestão hospitalar. O projeto permite apoiar o processo de decisão médica em antibioterapia personalizada, contribuindo para uso e prescrição de antibióticos mais eficiente e melhor adequação das terapêuticas a cada paciente e caso. RESISTIR apoia também a identificação e controlo de anomalias epidemiológicas (surtos de origem hospitalar e comunitária), contribuindo para o alinhamento com as novas políticas nacionais e internacionais de controle de infeção e resistência aos antimicrobianos.
+          The central goal of this proposal is to improve the molecular similarity algorithm NAMS (Non-contiguous Atom Matching Structural) by providing topological enhancements to the main atom matching algorithm so that the tool is able to both give pharmacologists and molecular biologists a direct understanding of the relevant components in a family of active compounds; and secondly to use this newly derived tool as a standalone tool for the screening phases of drug development programs.
           <br>
           <br>
-          RESISTIR combina tecnologias cutting edge através de técnicas inovadoras de prospeção de dados, estatística, epidemiologia, dados interligados, modelação numérica, aprendizagem automática e tecnologias semânticas para produzir outputs em formato legível por humanos, permitindo analisar e adaptar às mudanças epidemiológicas em tempo quase real. A arquitetura do RESISTIR é baseada em dois tipos de unidades: os nós individuais (RESISTIR-APP) e o nó central (RESISTIR-CORE). Os nós RESISTIR-APP residem nas unidades de saúde, e são responsáveis pela recolha de dados e apresentação de resultados. O nó central é responsável pela análise dos dados recolhidos e criação automática dos modelos de deteção de infeção, previsão de resistência, falha terapêutica e vigilância epidemiológica.
+          NAMS was designed to compare full molecules, thus in a way tapping the graph isomorphism problem and providing an extremely reliable polynomial solution.
+          <br>
+          However for a molecule to function as a drug, many times only specific parts of its structure (not necessarily contiguous) are necessary. Thus it is envisaged that NAMS can be modified by allowing the weighting of specific compositional and structure elements that are deemed to be essential for understanding a molecule pharmacological properties.
           <br>
           <br>
-          O consórcio promotor, Maxdata Software, S.A. e Faculdade de Ciências da Universidade de Lisboa, através das suas equipas multidisciplinares, agrega conhecimento nas diversas áreas do saber nucleares do projeto: ciências da vida e sistemas de informação.
+          In this proposal it is aimed to extend NAMS allowing this algorithm to differentiate between parts of the molecule allowing for the discovery of the most relevant parts as well as its differential amplification for molecular property prediction ad drug inference. Differently from other methods NAMS is not bound by the existence of any type of chemical descriptors and can conceivably be used in any chemical property prediction problem. The current inference engine, developed by the research team, is based on kriging over the global similarity provided by NAMS, and although providing results on the level of the best state-of-the-art QSAR algorithms using virtual no information other than the molecular structure, we believe that a topological differentiation mechanism will be key to extend NAMS over even more different molecules that share pharmacological characteristics. The current version of the inference engine requires no learning, as it is a kriging algorithm, taking advantage of the molecular metric space; it is further expected that the new version will be also able to directly assess the relevant topological characteristics of the most active molecules known and be able to use this intrinsic knowledge to retrieve from large molecular databases the compounds more likely to have the desired characteristics.
           <br>
           <br>
-          RESISTIR permitirá a criação de um novo produto com características diferenciadoras que reforçará de forma determinante a capacidade de internacionalização da empresa promotora.
+          The research team for the current project is an assembly of computer scientists and biochemists, pharmacologists and molecular biologists with world leading expertise in the fields of cheminformatics, molecular modeling, bloodbrain barrier permeability and cystic fibrosis.
+          <br>
+          <br>
+          This work will be divided in 3 major tasks, and each will be critical for the advancement of the project.
+          <br>
+          1. It is necessary to do a thorough evaluation of the best existing QSAR (Quantitative Structure Activity Relationship) methodologies and compare the current inference engine based on NAMS and Kriging. This comparison is supposed to be as exhaustive as possible, by testing each existing method over a set of benchmarks created from data collected in publicly available databases.
+          <br>
+          2. NAMS is to be adapted for including differential topological features in assessing chemical structural similarity and then this adaptation is to be optimized and tested within a novel framework, centered on Bayesian learning. The purpose is the empirical identification of the molecular topological characteristics that for each specific benchmark problem.
+          <br>
+          3. The topological enhanced model is to be put to the test over two distinct problems, for which there are world leading experts within the team. The first problem is the development of new lead compounds for enhancing trafficking of F508delCFTR to the plasma membrane. This problem is in the center of current drug development for cystic fibrosis. The second problem aims to determine whether a new molecule has the potential for crossing the BloodBrain Barrier. This issue is critical in most drug development programs for drugs that target the central nervous system.
         </p>
-        <p><b>Funding Entity:</b><br>P2020</p>
-        <p><b>Reference:</b><br>LISBOA-01-0247-FEDER-003379 </p>
+        <p><b>Funding Entity:</b><br>FCT</p>
+        <p><b>Reference:</b><br>PTDC/EEI-ESS/4923/2014</p>
 
       </div>
     </section><!-- End Services Section -->
