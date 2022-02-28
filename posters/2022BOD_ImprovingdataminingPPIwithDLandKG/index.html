@@ -84,40 +84,6 @@
           <p>LASIGE, Faculdade de Ciências, Universidade de Lisboa</p>
         </div>
       </div>
-
-
-     <div class="row icon-boxes">
-	 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon-box">
-			<center> 
-			  <h3 class="title">Biomedical knowledge graphs share, reuse and import data from each other routinely... </h4>
-			  <img src="assets/img/Interoperability.png" class="img-fluid" alt="" width="350" height="350"> 
-			 </center>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
-          <div class="icon-box">
-		    <center> 
-			  <h3 class="title"> ... This can be a potential source of <strong>data leakage</strong> for machine learning applications using these knowledge graphs, creating predictive models with overestimated performance values. </h3>
-			  <img src="assets/img/leakage.png" class="img-fluid" alt="" width="200" height="200"> 
-			</center>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-          <div class="icon-box">
-		    <center> 
-			  <h3 class="title"> To investigate potential data leakage, we simulate a realistic training situation, where everything in the training set occurs before everything in the test set. </h3>
-			  <img src="assets/img/TemporalData.png" class="img-fluid" alt="" width="300" height="300"> 
-			</center>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
   </section><!-- End Hero -->
 
 <main id="main">
@@ -129,7 +95,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Motivation </h2>
+          <h2> Motivation </h2>
         </div>
 
         <div class="row content">
@@ -162,16 +128,84 @@
         </div>
 
       </div>
+
+     </div>
+  </section><!-- End About Section -->
+
+	  
+  <section id="objectives" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Objectives </h2>
+        </div>
+
+        <div class="row content">
+
+          <div class="col-lg-6">
+            <p style="text-align: justify;">
+            As machine learning is increasingly being used, concerns about data leakage have been raised.
+			</p>
+			<p style="text-align: justify;">
+			<a href="https://arxiv.org/abs/2003.08001" >Leakage</a>  occurs when information about the target of a data mining problem that should not be legitimately available to mine from is introduced,
+			and it can lead to overestimation of the model’s performance. 
+			In biomedical applications, such as protein-protein interaction (PPI) prediction, data leakage can also be an issue since multiple databases and resources reuse the same sources of information.  
+            </p>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p style="text-align: justify;">
+            The majority of PPI prediction methods that are based on knowledge graphs (KGs) explore the Gene Ontology (GO) KG, composed of the <a href="http://geneontology.org/" >GO</a> and 
+			<a href="http://geneontology.org/docs/go-annotations/">GO annotations</a>. 
+			Since GO annotations can be based on the automated processing of other data sources, the same information that is used to support a PPI in a 
+			<a href="https://string-db.org/cgi/input?sessionId=bHnvrRHPzilD&input_page_show_search=on">database</a> to 
+			also be used to establish a GO annotation for the proteins.
+			</p>
+			<p style="text-align: justify;">
+			We investigated potential data leakage between the GO KG and the STRING database in the task of PPI prediction, 
+			by comparing performance on unseen interactions.
+      <div class="row icon-boxes">
+	 
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+			<center> 
+			  <h3 class="title">Biomedical knowledge graphs share, reuse and import data from each other routinely... </h4>
+			  <img src="assets/img/Interoperability.png" class="img-fluid" alt="" width="350" height="350"> 
+			 </center>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+		    <center> 
+			  <h3 class="title"> ... This can be a potential source of <strong>data leakage</strong> for machine learning applications using these knowledge graphs, creating predictive models with overestimated performance values. </h3>
+			  <img src="assets/img/leakage.png" class="img-fluid" alt="" width="200" height="200"> 
+			</center>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+		    <center> 
+			  <h3 class="title"> To investigate potential data leakage, we simulate a realistic training situation, where everything in the training set occurs before everything in the test set. </h3>
+			  <img src="assets/img/TemporalData.png" class="img-fluid" alt="" width="300" height="300"> 
+			</center>
+          </div>
+        </div>
+
+      </div>
+
+     </div>
   </section><!-- End About Section -->
 
 
 
 <!-- ======= Data Section ======= -->
-  <section id="data" class="services section-bg">
+  <section id="methodology" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Knowledge Graphs and Data Resources</h2>
+          <h2>Datasets</h2>
           <div class="row justify-content-center">
             <div class="col-8" >
               <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
@@ -181,6 +215,20 @@
             </div>
           </div>
         </div>
+
+	      
+          <h2>Data mining tasks</h2>
+          <div class="row justify-content-center">
+            <div class="col-8" >
+              <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
+					The first step of our approach is using historical data to build the PPI datasets.   
+					Then we use the GO KG and the protein pairs to predict interactions using several machine learning algorithms. 
+              </span>
+            </div>
+          </div>
+        </div>
+	      
+	      
 
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
@@ -230,44 +278,6 @@
                 
 				<div id="PPIdatasets" class="collapse">
 				
-				  <style>
-		            #table_datasets{
-		              padding-top: 25px; 
-					  padding-bottom: 25px; 
-		            }
-                  </style>
-				
-                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                  <script type="text/javascript">
-                  google.charts.load('current', {'packages':['table']});
-                  google.charts.setOnLoadCallback(drawTable);
-                  function drawTable() {
-                  var data = new google.visualization.DataTable();
-                  data.addColumn('string', 'STRING version');
-                  data.addColumn('string', 'Date');
-                  data.addColumn('number', 'Positive pairs');
-                  data.addRows([
-                  ['v9.1', '04/2015', 12681],
-                  ['v10', '05/2017', 26863],
-                  ['v10.5', '01/2019', 31384],
-                  ['v11 (excluding pairs in v9.1)', '10/2020', 41227],
-                  ['v11 (excluding pairs in v10)', '10/2020', 31642],
-                  ['v11 (excluding pairs in v10.5)', '10/2020', 23571]
-                  ]);
-                  var table = new google.visualization.Table(document.getElementById('table_datasets'));
-                  table.draw(data, {showRowNumber: false, width: '70%', height: '100%'});}
-                  </script>
-				
-                  <div id="table_datasets"></div>
-				
-				  <p style="text-align: justify;"> We considered the following criteria to select protein pairs from STRING:</p> 
-				  <p style="text-align: justify;"> (i) each protein must be annotated with the GO;</p> 
-				  <p style="text-align: justify;"> (ii) protein interactions must be experimentally determined or from curated databases;</p> 
-				  <p style="text-align: justify;"> (iii) interactions must have a confidence score above 950 to retain only high confidence interactions.</p> 
-				  <p style="text-align: justify;"> We employed random sampling to create negative pairs composed of the human proteins present in the positive pairs but without any STRING interactions 
-				  between them, building a balanced dataset. </p> 
-				
-				</div>
 			  
             </div>
 			
@@ -490,110 +500,6 @@
 		</div>
 
 
-        <div class="row" >
-          <div class="row justify-content-center">
-            <div class="col-8" >
-		      <div id="boxplot_div"></div>
-            </div>
-		  </div>
-		
-		  <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-base.min.js"></script>
-          <style type="text/css">
-            #boxplot_div{
-            width:  100%;
-            height: 650px;
-            margin: 0;
-            padding-top: 20px;
-		    }
-          </style>
-         
-	      <script>
-	  
-          anychart.onDocumentReady(function () {
-  
-          var data1 = [
-           {x:"All", low: 0.7351575811547773, q1: 0.8263387301741768, median: 0.8435610400845482, q3: 0.873324187080827, high: 0.9200569554545556},
-	       {x:"ResnikMax", low: 0.8529089402412717, q1: 0.8641606785509511, median: 0.8785665892934128, q3: 0.8987648994667123, high: 0.9200569554545556},
-	       {x:"SimGIC", low: 0.767201763369996, q1: 0.8264161960986258, median: 0.8349372308954044, q3: 0.8534712192662016, high: 0.8736131971487632},
-	       {x:"RDF2Vec", low: 0.7351575811547773, q1: 0.812410210596547, median: 0.8235578406987907, q3: 0.838720824680285, high: 0.8511243823303396}
-	       ];
-	      var data2 = [
-		   {x:"All", low: 0.7492308692542392, q1: 0.8268493070227108, median: 0.8451348587598732, q3: 0.8734398105265948, high: 0.9055119855369801},
-		   {x:"ResnikMax", low: 0.8431668013948673, q1: 0.8761689132536509, median: 0.8894993745799793, q3: 0.895724860181129, high: 0.9055119855369801},
-		   {x:"SimGIC", low: 0.7716923718444333, q1: 0.842251512018417, median: 0.8456474200394737, q3: 0.8582896394255981, high: 0.8605163598627782},
-		   {x:"RDF2Vec", low: 0.7492308692542392, q1: 0.8081330858289864, median: 0.8228167094531215, q3: 0.8299351396240823, high: 0.8314043962297505}
-	       ];
-
-	      var chart = anychart.box();
-
-	      series1 = chart.box(data1);
-	      series1.name("Same version");
-
-	      series1.normal().fill("#ff748c", 0.2);
-	      series1.hovered().fill("#ff748c", 0.2);
-	      series1.selected().fill("#ff748c", 0.6);
-	      series1.normal().stroke("#ff748c", 1);
-	      series1.hovered().stroke("#ff748c", 2);
-	      series1.selected().stroke("#ff748c", 4);
-	      series1.normal().medianStroke("#ff748c", 1);
-	      series1.hovered().medianStroke("#ff748c", 2);
-	      series1.selected().medianStroke("#ff748c", 2);
-	      series1.normal().stemStroke("#ff748c", 0.5);
-	      series1.hovered().stemStroke("#ff748c", 1);
-	      series1.selected().stemStroke("#ff748c", 2);
-	      series1.whiskerWidth(50);
-	      series1.normal().whiskerStroke("#ff748c", 0.5);
-	      series1.hovered().whiskerStroke("#ff748c", 1);
-	      series1.selected().whiskerStroke("#ff748c", 2);
-
-	      series2 = chart.box(data2);
-	      series2.name("Future version");
-
-	      series2.normal().fill("#0066cc", 0.2);
-	      series2.hovered().fill("#0066cc", 0.2);
-	      series2.selected().fill("#0066cc", 0.6);
-	      series2.normal().stroke("#0066cc", 1);
-	      series2.hovered().stroke("#0066cc", 2);
-	      series2.selected().stroke("#0066cc", 4);
-	      series2.normal().medianStroke("#0066cc", 1);
-	      series2.hovered().medianStroke("#0066cc", 2);
-	      series2.selected().medianStroke("#0066cc", 2);
-	      series2.normal().stemStroke("#0066cc", 0.5);
-	      series2.hovered().stemStroke("#0066cc", 1);
-	      series2.selected().stemStroke("#0066cc", 2);
-	      series2.whiskerWidth(50);
-	      series2.normal().whiskerStroke("#0066cc", 0.5);
-	      series2.hovered().whiskerStroke("#0066cc", 1);
-	      series2.selected().whiskerStroke("#0066cc", 2);
-
-	      chart.interactivity("by-x");
-	  
-	      var title = chart.title("Weighted Average F-measure Boxplot using the Same version and the Future version");
-	      chart.title().fontSize(16);
-	      chart.title().fontColor("#000000");	  
-	      chart.title().fontWeight("bold");
-
-	      chart.legend(true);
-	      chart.legend().fontSize(15);
-	      chart.legend().fontColor("#000000");	  
-          chart.legend().fontWeight("bold");	  	  
-	  
-	      chart.yAxis().title("Weighted Average F-measure");
-	      chart.yAxis().title().fontSize(15);
-	      chart.yAxis().title().fontColor("#000000");	  
-	 
-	      chart.xAxis().labels().fontColor("#000000");
-	      chart.xAxis().labels().fontSize(15);	
-
-	      chart.yAxis().labels().fontColor("#000000");
-	      chart.yAxis().labels().fontSize(15);
-	  
-	      chart.container("boxplot_div");
-	      chart.draw();
-	      });
-
-	      </script>  
-
         </div>  
 
       </div> 
@@ -606,7 +512,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2> Conclusions </h2>
+          <h2> Future Work </h2>
         </div>
         
 		<div class="row justify-content-center">
@@ -627,23 +533,6 @@
       </div>
   </section><!-- End Conclusions Section -->
 
-
-
-<!-- ======= About Video Section ======= -->
-  <section id="minute-video" class="about-video">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>One-Minute Video</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <img src="assets/img/OneMinuteVideo.png" class="img-fluid" alt="">
-          <a href="https://www.youtube.com/watch?v=M22fEFDQSm0" class="glightbox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-        </div>
-
-      </div>
-  </section><!-- End About Video Section -->
 
 
 
@@ -668,26 +557,12 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4> Rita T. Sousa </h4>
+                <h4> Laura Balbi </h4>
                 <span>LASIGE, Faculdade de Ciências </span>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/authors/ProfSara.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://scholar.google.com/citations?user=g15oqi0AAAAJ&hl"><i class="bi bi-google"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4> Sara Silva </h4>
-                <span>LASIGE, Faculdade de Ciências</span>
-              </div>
-            </div>
-          </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
@@ -718,10 +593,7 @@
 
         <div class="section-title">
           <h2> Funding </h2>
-          <p> Catia Pesquita, Sara Silva, Rita T. Sousa are funded by the FCT through LASIGE Research Unit, ref. UIDB/00408/2020 and ref. UIDP/00408/2020.
-          Catia Pesquita and Rita T. Sousa are funded by project SMILAX (ref. PTDC/EEI-ESS/4633/2014), Sara Silva by projects BINDER (ref. PTDC/CCI-INF/29168/2017) 
-          and PREDICT (ref. PTDC/CCI-CIF/29877/2017), and Rita T. Sousa by FCT PhD grant (ref. SFRH/BD/145377/2019). It was also partially supported by the KATY
-          project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017453. </p> 
+          <p> Catia Pesquita, Laura Balbi are funded by the FCT through LASIGE Research Unit, ref. UIDB/00408/2020 and ref. UIDP/00408/2020.</p> 
         </div>
 
         <div class="row justify-content-center">
