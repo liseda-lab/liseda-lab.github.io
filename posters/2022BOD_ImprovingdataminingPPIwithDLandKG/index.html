@@ -99,30 +99,15 @@
 
         <div class="row content">
 
-          <div class="col-lg-6">
+           <div class="col-xl-12 col-lg-12 text-center">
             <p style="text-align: justify;">
-            As machine learning is increasingly being used, concerns about data leakage have been raised.
+            Graphs provide a data structure for knowledge representation and are useful for the description of relationships in all kinds of knowledge domains, including biological systems. 
 			</p>
 			<p style="text-align: justify;">
-			<a href="https://arxiv.org/abs/2003.08001" >Leakage</a>  occurs when information about the target of a data mining problem that should not be legitimately available to mine from is introduced,
-			and it can lead to overestimation of the model’s performance. 
-			In biomedical applications, such as protein-protein interaction (PPI) prediction, data leakage can also be an issue since multiple databases and resources reuse the same sources of information.  
+			  <strong>Knowledge graphs (KG) </strong> allow for the representation of knowledge through a logical description of its concepts,  including of biological entities. By combining biological data with the relevant biological knowledge available, we’ll be bringing knowledge graphs into data mining tasks, and creating an opportunity for ML models to learn from the enriched graph data.
             </p>
           </div>
 
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p style="text-align: justify;">
-            The majority of PPI prediction methods that are based on knowledge graphs (KGs) explore the Gene Ontology (GO) KG, composed of the <a href="http://geneontology.org/" >GO</a> and 
-			<a href="http://geneontology.org/docs/go-annotations/">GO annotations</a>. 
-			Since GO annotations can be based on the automated processing of other data sources, the same information that is used to support a PPI in a 
-			<a href="https://string-db.org/cgi/input?sessionId=bHnvrRHPzilD&input_page_show_search=on">database</a> to 
-			also be used to establish a GO annotation for the proteins.
-			</p>
-			<p style="text-align: justify;">
-			We investigated potential data leakage between the GO KG and the STRING database in the task of PPI prediction, 
-			by comparing performance on unseen interactions.
-            </p>
-          </div>
 
         </div>
 
