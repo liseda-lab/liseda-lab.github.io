@@ -165,9 +165,11 @@
 			by comparing performance on unseen interactions.
             </p>
           </div>
+      
 		
+		
+      <hr class="hr3">
       <div class="row icon-boxes">
-	 
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
 			<center> 
@@ -210,8 +212,8 @@
         <div class="section-title">
 	<h2>Methodology</h2>
 	</div>	
-		
-          <h3>Datasets</h3>
+	<hr class="hr3">
+          
           <div class="row justify-content-center">
             <div class="col-8" >
               <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
@@ -220,7 +222,7 @@
               </span>
             </div>
           </div>
-
+	  <hr class="hr3">
 	      
           <h3>Data mining tasks</h3>
           <div class="row justify-content-center">
@@ -234,7 +236,7 @@
         </div>
 	      
 	      
-
+        <hr class="hr3">
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
@@ -246,7 +248,19 @@
                 <i class="bi bi-diagram-3"></i>
               </div>
 			  
-              <h4><a href="">Gene Ontology Knowledge Graph</a></h4>
+              <h4><a href="">MLP</a></h4>
+			  <p>
+              <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
+              GO and the annotations that link proteins to GO classes make up a KG.
+              We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
+			  </p>
+              
+			  <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#GOKG"> See GO KG <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
+                <div id="GOKG" class="collapse">
+                  <img src="assets/img/GO.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
+                </div>
+		    
+              <h4><a href="">MLP with Node2Vec</a></h4>
 			  <p>
               <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
               GO and the annotations that link proteins to GO classes make up a KG.
@@ -302,10 +316,7 @@
           <h2>Preliminary Results </h2>
           <div class="row justify-content-center">
             <div class="col-8" >
-              <span> We conducted two types of experiments: </span>
-			  <span> <strong>(i) Same version</strong>, where we train the model with randomly chosen 10 000 protein interacting pairs from the archived STRING version and test it with the remaining pairs;</span>
-			  <span> <strong>(ii) Future version</strong>, where we train the model with randomly chosen 10 000 protein pairs from the archived STRING version and test it on data from the current STRING version (excluding interactions present in the archived version).</span>
-			  <span> The same randomly chosen 10 000 protein pairs are used in both settings.</span>
+              <span> <strong> Results for the multi-label classification task: </strong></span>
             </div>
           </div>
         </div>
