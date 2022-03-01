@@ -177,18 +177,14 @@
 	      <img src="assets/img/mlp_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
 
 			  <p>
-              <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
-              GO and the annotations that link proteins to GO classes make up a KG.
-              We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
+			The MLP receives only raw node features as input, it doesn't consider the nodes' local neighborhoods.
 			  </p>
               
 		    
               <h4 style="text-align: justify;"><a href="">MLP with Node2Vec embeddings</a></h4>
               <img src="assets/img/mlp_n2v_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">   
 			  <p>
-              <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
-              GO and the annotations that link proteins to GO classes make up a KG.
-              We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
+			The MLP + node2vec pipeline inputs raw features + node2vec embedding of random walks through nodes’ neighborhoods onto the MLP.
 			  </p>
               	
             </div>
