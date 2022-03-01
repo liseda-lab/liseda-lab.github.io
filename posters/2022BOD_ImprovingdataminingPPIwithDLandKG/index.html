@@ -200,12 +200,12 @@
 	      <h4><a href="">GCN</a></h4>
 	      <img src="assets/img/gcn_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">     
               <p> 
-			  The PPI datasets were obtained from the <a href=https://string-db.org >STRING Database</a>, one of the largest available 
-			  PPI databases. 
-			  We built several PPI datasets using three archived versions of the STRING database (v9.1, v10, and v10.5) and the current version (v11). 
-			  For the current version, we created three datasets each excluding protein pairs present in each of the older versions.
-			  </p>
-			  
+		Based on the loopy-belief propagation method, where, for example, the unlabeled node h receives message m:
+	      </p> 
+	      <img src="assets/img/equation.png" class="img-fluid" alt="" style="padding-top:20px" width="400" height="10">     		      
+              <p> 
+		where 𝜓(𝑌𝑒,𝑌ℎ) represents the dependency between h and e and  ∅𝑓 is the initial/prior belief of the node’s label, being ℒ the set of all Y labels and e a neighboring node of h.
+	      </p>		  
               <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#PPIdatasets"> See the number of interactions in each version of the STRING database <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
                 
 				<div id="PPIdatasets" class="collapse">
@@ -236,116 +236,8 @@
 
 
 	<div class="row justify-content-center">
-          <div class="col-4">
-            <div id="classifierFilter_div"></div>
-          </div>
-          <div class="col-4">
-            <div id="ssmFilter_div"></div>
-          </div>
-        </div>
-
-
-		<div class="row" >
-          <div class="row justify-content-center">
-            <div class="col-8" >
-              <div id="table_div"></div>
-            </div>
-          </div>
-		 
-          <style>
-           .cssSelectedTableRow {
-             font-size: 15px;
-             font-weight:bold;
-           }
-           .cssHeaderCell {
-             font-size: 15px;
-             border: solid 1px #FFFFFF;
-           }
-           .cssTableCell {
-             font-size: 15px;
-             border: solid 1px #FFFFFF;
-           }
-		   #table_div{
-             width:  1310px;
-             height: 380px;
-             margin: 0; 
-		   }
-          </style>
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript">
-          google.charts.load('current', {'packages':['corechart', 'table', 'controls']});
-          google.charts.setOnLoadCallback(drawMainDashboard);
-
-          function drawMainDashboard() {
-
-            var dashboard = new google.visualization.Dashboard(
-            document.getElementById('dashboard_div'));
-
-            var classifierFilter = new google.visualization.ControlWrapper({
-            'controlType': 'CategoryFilter',
-            'containerId': 'classifierFilter_div',
-            'options': {
-            'filterColumnIndex': 0,
-            'ui': {
-            'caption': 'All Classifiers',
-            'labelStacking': 'horizontal',
-            'label': 'Choose a classifier:',
-            'allowTyping': false,
-            'allowMultiple': false
-                  }
-                }
-             });
-
-            var ssmFilter = new google.visualization.ControlWrapper({
-            'controlType': 'CategoryFilter',
-            'containerId': 'ssmFilter_div',
-            'options': {
-            'filterColumnIndex': 1,
-            'ui': {
-            'caption': 'Both graphs',
-            'labelStacking': 'horizontal',
-            'label': 'Choose a graph:',
-            'allowTyping': false,
-            'allowMultiple': false
-                  }
-                },
-			'state': {'selectedValues': ['ResnikMax']}
-             });
-
-            var cssClassNames = {
-            'selectedTableRow': 'cssSelectedTableRow',
-            'headerCell': 'cssHeaderCell',
-            'tableCell': 'cssTableCell',
-            };
-
-            var table2 = new google.visualization.ChartWrapper({
-            'chartType': 'Table',
-            'containerId': 'table_div',
-            'options': {'width': '66%', 'height': 360, 'cssClassNames':cssClassNames},
-            });
-
-            var data2 = google.visualization.arrayToDataTable([
-            ['Classifier', "graph", 'ROC-AUC', 'Accuracy'],
-            ['MLP',"PPI network", "68,18%", "95,00%"],
-			      ['MLP',"PPI+GO graph","76,19%","97,78%"],
-		      	      ['MLP with Node2vec',"PPI network","71,57%","96,39%"],
-			      ['MLP with Node2vec',"PPI+GO graph","76,33%","96,45%"],
-			      ['GCN',"PPI network","72,26%","92,68%"],
-			      ['GCN',"PPI+GO graph","78,35%","93,90%"]
-            ]);
-
-            dashboard.bind([classifierFilter, ssmFilter], [table2, table2]);
-            dashboard.draw(data2);
-            }
-
-          </script>
-		</div>
-
-
-        </div>  
-
-      </div> 
+	<img src="assets/img/table.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="450">
+        </div> 
   </section><!-- End Results Section -->
 
 
