@@ -158,8 +158,11 @@
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
 	      <h4 style="text-align: justify;">  Methodology steps: </h4>
+		<p style="text-align: justify;">   </p>
 		<p style="text-align: justify;"> - Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
 		<p style="text-align: justify;"> - Investigate graph/machine learning methods that are able to explore the added information;</p>
+                <p>    </p> 
+		<p> Three Deep Learning pipelines used so far: 1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN). </p> 
             </div>
           </div>
         </div>
@@ -169,9 +172,8 @@
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
               <div class="row justify-content-center">
-		      <p> Three Deep Learning pipelines used so far: 1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN). </p> 
-		      <p>    </p> 
-              <h4><a href="">MLP (simple feed-forward neural network)</a></h4>
+
+              <h4 style="text-align: justify;"><a href="">MLP (simple feed-forward neural network)</a></h4>
 	      <img src="assets/img/mlp_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
 
 			  <p>
@@ -180,24 +182,21 @@
               We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
 			  </p>
               
-			  <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#GOKG"> See GO KG <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
 		    
-              <h4><a href="">MLP with Node2Vec embeddings</a></h4>
+              <h4 style="text-align: justify;"><a href="">MLP with Node2Vec embeddings</a></h4>
               <img src="assets/img/mlp_n2v_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">   
 			  <p>
               <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
               GO and the annotations that link proteins to GO classes make up a KG.
               We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
 			  </p>
-              
-			  <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#GOKG"> See GO KG <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>             
-				
+              	
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
               
-	      <h4><a href="">GCN</a></h4>
+	      <h4 style="text-align: justify;"><a href="">GCN</a></h4>
 	      <img src="assets/img/gcn_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">     
               <p> 
 		Based on the loopy-belief propagation method, where, for example, the unlabeled node h receives message m:
@@ -206,12 +205,11 @@
               <p> 
 		where 𝜓(𝑌𝑒,𝑌ℎ) represents the dependency between h and e and  ∅𝑓 is the initial/prior belief of the node’s label, being ℒ the set of all Y labels and e a neighboring node of h.
 	      </p>		  
-              <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#PPIdatasets"> See the number of interactions in each version of the STRING database <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
-                
-				<div id="PPIdatasets" class="collapse">
+            </div>     
+	    <div id="PPIdatasets" class="collapse">
 				
 			  
-            </div>
+           </div>
 			
           </div>
 
@@ -229,14 +227,17 @@
           <h2> Preliminary Results </h2>
           <div class="row justify-content-center">
             <div class="col-8" >
-              <span> <strong> Results for the multi-label classification task: </strong></span>
+              <h3> <strong> Results for the multi-label classification task: </strong></h3>
             </div>
           </div>
         </div>
 
 
 	<div class="row justify-content-center">
-	<img src="assets/img/table.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="450">
+	<img src="assets/img/table.png" class="img-fluid" alt="" style="padding-top:20px" width="450" height="250">
+		<p> Performance results for the metrics ROC-AUC and accuracy. </p>
+		<p>  </p>
+		<h4> The results above demonstrate that the enrichment of the PPI graph with knowledge of its entities has allowed for an overall significant increase of the performance of the machine learning methods evaluated. </h4>
         </div> 
   </section><!-- End Results Section -->
 
