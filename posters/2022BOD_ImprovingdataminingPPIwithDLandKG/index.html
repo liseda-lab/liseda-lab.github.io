@@ -166,23 +166,25 @@
 	</div>	
 	<hr class="hr3">
 	  <h3>Datasets</h3>
-          <div class="row justify-content-center">
-            <div class="col-8" >
-              <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
-					The first step of our approach is using historical data to build the PPI datasets.   
-					Then we use the GO KG and the protein pairs to predict interactions using several machine learning algorithms. 
-              </span>
+          <div class="row content">
+           <div class="col-lg-6">
+		   <p style="text-align: justify;"><strong> Datasets used:  </strong> </p>
+              <p style="text-align: justify;"> Open Graph Benchmark Project’s PPI Networks (Ogbn-proteins and Ogbi-ppa); </p>
+	      <p style="text-align: justify;"><strong> Data mining tasks: </strong> </p>
+              <p style="text-align: justify;"> - Ogbn-proteins - multi-label classification, where labels represent protein functional classes; </p>
+              <p style="text-align: justify;">- Ogbl-ppa  - PPI prediction problem.</p>
+              <p style="text-align: justify;"> Ontology and annotations retrieved from the Gene Ontology website; </p>
             </div>
           </div>
 	  <hr class="hr3">
 	      
           <h3>Data mining tasks</h3>
           <div class="row justify-content-center">
-            <div class="col-8" >
-              <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
-					The first step of our approach is using historical data to build the PPI datasets.   
-					Then we use the GO KG and the protein pairs to predict interactions using several machine learning algorithms. 
-              </span>
+            <div class="col-lg-6 pt-4 pt-lg-0"> >
+	      <p style="text-align: justify;">
+		    <strong> Methodology steps: </strong></p>
+		<p style="text-align: justify;">- Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
+		<p style="text-align: justify;">- Investigate graph/machine learning methods that are able to explore the added information;</p>
             </div>
           </div>
         </div>
@@ -201,7 +203,7 @@
                 </svg>
                 <i class="bi bi-diagram-3"></i>
               </div>
-			  
+		      <p> Three Deep Learning pipelines used so far: 1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN). </p>  
               <h4><a href="">MLP</a></h4>
                 <div id="GOKG" class="collapse">
                   <img src="assets/img/mlp_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
