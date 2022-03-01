@@ -115,28 +115,23 @@
 
      </div>
   </section><!-- End About Section -->
-
-	  
+  
   <section id="objectives" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2> Objectives </h2>
         </div>
-
 	<div class="row justify-content-center">
-
             <p style="text-align: justify;">
-            As machine learning is increasingly being used, concerns about data leakage have been raised.
+            This work aims to improve representation learning-based graph mining over PPI networks by enriching the graph with meaningful knowledge pertaining to its proteins, through:
 			</p>
 			<p style="text-align: justify;">
-			<a href="https://arxiv.org/abs/2003.08001" >Leakage</a>  occurs when information about the target of a data mining problem that should not be legitimately available to mine from is introduced,
-			and it can lead to overestimation of the model’s performance. 
-			In biomedical applications, such as protein-protein interaction (PPI) prediction, data leakage can also be an issue since multiple databases and resources reuse the same sources of information.  
+			- Investigation of different approaches to integrate the Gene Ontology with PPI networks and combine it with different deep learning pipelines.
+			- Comparison and evaluation of the different combinations in benchmark data.  
             </p>
           </div>
       </div>
-
      </div>
   </section><!-- End About Section -->
 
@@ -162,8 +157,7 @@
               <p style="text-align: justify;"> Ontology and annotations retrieved from the Gene Ontology website; </p>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
-	      <h4 style="text-align: justify;">
-		     Methodology steps: </h4>
+	      <h4 style="text-align: justify;">  Methodology steps: </h4>
 		<p style="text-align: justify;"> - Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
 		<p style="text-align: justify;"> - Investigate graph/machine learning methods that are able to explore the added information;</p>
             </div>
@@ -174,12 +168,10 @@
 	      
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-           
-		  
-            <div class="icon-box iconbox-blue">
               <div class="row justify-content-center">
-		      <p> Three Deep Learning pipelines used so far: 1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN). </p>  
-              <h4><a href="">MLP</a></h4>
+		      <p> Three Deep Learning pipelines used so far: 1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN). </p> 
+		      <p>    </p> 
+              <h4><a href="">MLP (simple feed-forward neural network)</a></h4>
 	      <img src="assets/img/mlp_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
 
 			  <p>
@@ -190,9 +182,9 @@
               
 			  <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#GOKG"> See GO KG <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
 		    
-              <h4><a href="">MLP with Node2Vec</a></h4>
+              <h4><a href="">MLP with Node2Vec embeddings</a></h4>
               <div id="GOKG" class="collapse">
-	      <img src="assets/img/gcn_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550"> 
+	      <img src="assets/img/mlp_n2v_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550"> 
 	      </div>
 			  <p>
               <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
@@ -216,6 +208,7 @@
               </div>
               
 			  <h4><a href="">GCN</a></h4>
+	      <img src="assets/img/gcn_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">     
               <p> 
 			  The PPI datasets were obtained from the <a href=https://string-db.org >STRING Database</a>, one of the largest available 
 			  PPI databases. 
