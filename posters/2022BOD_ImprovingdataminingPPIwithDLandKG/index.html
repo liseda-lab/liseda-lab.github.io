@@ -124,9 +124,8 @@
           <h2> Objectives </h2>
         </div>
 
-        <div class="row content">
+	<div class="row justify-content-center">
 
-          <div class="col-lg-6">
             <p style="text-align: justify;">
             As machine learning is increasingly being used, concerns about data leakage have been raised.
 			</p>
@@ -134,20 +133,6 @@
 			<a href="https://arxiv.org/abs/2003.08001" >Leakage</a>  occurs when information about the target of a data mining problem that should not be legitimately available to mine from is introduced,
 			and it can lead to overestimation of the model’s performance. 
 			In biomedical applications, such as protein-protein interaction (PPI) prediction, data leakage can also be an issue since multiple databases and resources reuse the same sources of information.  
-            </p>
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p style="text-align: justify;">
-            The majority of PPI prediction methods that are based on knowledge graphs (KGs) explore the Gene Ontology (GO) KG, composed of the <a href="http://geneontology.org/" >GO</a> and 
-			<a href="http://geneontology.org/docs/go-annotations/">GO annotations</a>. 
-			Since GO annotations can be based on the automated processing of other data sources, the same information that is used to support a PPI in a 
-			<a href="https://string-db.org/cgi/input?sessionId=bHnvrRHPzilD&input_page_show_search=on">database</a> to 
-			also be used to establish a GO annotation for the proteins.
-			</p>
-			<p style="text-align: justify;">
-			We investigated potential data leakage between the GO KG and the STRING database in the task of PPI prediction, 
-			by comparing performance on unseen interactions.
             </p>
           </div>
       </div>
@@ -168,11 +153,12 @@
 	  <h3>Datasets</h3>
           <div class="row content">
            <div class="col-lg-6">
-		   <p style="text-align: justify;"><strong> Datasets used:  </strong> </p>
+	      <p style="text-align: justify;"> <strong> Datasets used: </strong> </p>
               <p style="text-align: justify;"> Open Graph Benchmark Project’s PPI Networks (Ogbn-proteins and Ogbi-ppa); </p>
-	      <p style="text-align: justify;"><strong> Data mining tasks: </strong> </p>
+	      <p style="text-align: justify;"> <strong> Data mining tasks: </strong> </p>
               <p style="text-align: justify;"> - Ogbn-proteins - multi-label classification, where labels represent protein functional classes; </p>
-              <p style="text-align: justify;">- Ogbl-ppa  - PPI prediction problem.</p>
+              <p style="text-align: justify;"> - Ogbl-ppa  - PPI prediction problem.</p>
+	      <p style="text-align: justify;">   </p>
               <p style="text-align: justify;"> Ontology and annotations retrieved from the Gene Ontology website; </p>
             </div>
           </div>
@@ -180,11 +166,11 @@
 	      
           <h3>Data mining tasks</h3>
           <div class="row justify-content-center">
-            <div class="col-lg-6 pt-4 pt-lg-0"> >
+            <div class="col-lg-6 pt-4 pt-lg-0">
 	      <p style="text-align: justify;">
 		    <strong> Methodology steps: </strong></p>
-		<p style="text-align: justify;">- Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
-		<p style="text-align: justify;">- Investigate graph/machine learning methods that are able to explore the added information;</p>
+		<p style="text-align: justify;"> - Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
+		<p style="text-align: justify;"> - Investigate graph/machine learning methods that are able to explore the added information;</p>
             </div>
           </div>
         </div>
