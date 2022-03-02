@@ -62,14 +62,13 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
  </header><!-- End Header -->
 
 
 <!-- ======= Hero Section ======= -->
  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="10">
+    <div class="container position-relative" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-12 col-lg-12 text-center">
           <h1>Improving data mining of PPI networks by </h1>
@@ -84,7 +83,7 @@
 
 
 <!-- ======= About Section ======= -->
-  <section id="motivation" class="about">
+ <section id="motivation" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2> Motivation </h2>
@@ -100,10 +99,7 @@
 			  <strong>Knowledge graphs (KG) </strong> allow for the representation of knowledge through a logical description of its concepts,  including of biological entities. By combining biological data with the relevant biological knowledge available, we’ll be bringing knowledge graphs into data mining tasks, and creating an opportunity for ML models to learn from the enriched graph data.
             </p>
           </div>
-
-
         </div>
-
       </div>
 
      </div>
@@ -187,7 +183,7 @@
 	      <p>   </p>
               <h4 style="text-align: justify;"><a href="">  1) MLP (simple feed-forward neural network)</a></h4>
 	      <p>   </p>
-	      <img src="assets/img/mlp_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
+	      <img src="assets/img/mlp_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
               <h4>   </h4>
 	      <p> The MLP receives only raw node features as input, it doesn't consider the nodes' local neighborhoods.
 	      </p>
@@ -196,7 +192,7 @@
 	      <p>   </p> 
               <h4 style="text-align: justify;"><a href="">  2) MLP with Node2Vec embeddings</a></h4>
 	      <h4>   </h4>
-              <img src="assets/img/mlp_n2v_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">   
+              <img src="assets/img/mlpn2v_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">   
 	      <p>   </p>
 	      <p> The MLP + node2vec pipeline inputs both raw node features and a node2vec-made vector representation of random walks through the nodes’ neighborhoods onto the MLP. </p>
             </div>
@@ -207,7 +203,7 @@
               <h4>   </h4>
 	      <p>   </p>
 	      <h4 style="text-align: justify;"><a href="">  3) GCN</a></h4>
-	      <img src="assets/img/gcn_last.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">     
+	      <img src="assets/img/gcn_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">     
 	      <h4>   </h4>
               <p> 
 		It considers the nodes' neighborhood by message-passing. Based on the <strong>loopy-belief propagation</strong> method, where, for example, the unlabeled node h receives message m:
