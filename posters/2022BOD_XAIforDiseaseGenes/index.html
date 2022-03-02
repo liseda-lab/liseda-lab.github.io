@@ -48,13 +48,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#motivation">Motivation</a></li>
 	  <li><a class="nav-link scrollto" href="#background">Background</a></li>
-          <li class="dropdown"><a href="#strategy"><span>Methods</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#data">Data</a></li>
-              <li><a href="#PPIprediction">Protein-Protein Interaction Prediction</a></li>
-            </ul>
-          </li>
-		  <li><a class="nav-link scrollto" href="#results">Results</a></li>
+	  <li><a class="nav-link scrollto" href="#methodology">Methodology</a></li>
+	  <li><a class="nav-link scrollto" href="#results">Results</a></li>
           <li><a class="nav-link scrollto" href="#conclusions">Conclusions</a></li>
           <li><a class="nav-link scrollto" href="#authors">Authors</a></li>
           <li><a class="nav-link scrollto" href="#funding">Funding</a></li
@@ -135,117 +130,34 @@
 
 	
 
-<!-- ======= Data Section ======= -->
-  <section id="data" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Knowledge Graphs and Data Resources</h2>
-          <div class="row justify-content-center">
-            <div class="col-8" >
-              <span> PPI prediction is cast as a classification task that takes as input the GO KG and a set of protein pairs.
-					The first step of our approach is using historical data to build the PPI datasets.   
-					Then we use the GO KG and the protein pairs to predict interactions using several machine learning algorithms. 
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              
-			  <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-diagram-3"></i>
-              </div>
-			  
-              <h4><a href="">Gene Ontology Knowledge Graph</a></h4>
-			  <p>
-              <a href="http://geneontology.org/" >GO</a> describes protein function with respect to three semantic aspects: biological processes, cellular components, and molecular functions. 
-              GO and the annotations that link proteins to GO classes make up a KG.
-              We obtained archived versions of the GO and GO annotations in 2015, 2017 and 2019 from the <a href=http://release.geneontology.org/ >GO Data Archive</a>.
-			  </p>
-              
-			  <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#GOKG"> See GO KG <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
-                <div id="GOKG" class="collapse">
-                  <img src="assets/img/GO.png" class="img-fluid" alt="" style="padding-top:20px" width="550" height="550">
-                </div>
-				
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-yellow">
-              
-			  <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-server"></i> 
-              </div>
-              
-			  <h4><a href="">Protein-Protein Interaction Datasets</a></h4>
-              <p> 
-			  The PPI datasets were obtained from the <a href=https://string-db.org >STRING Database</a>, one of the largest available 
-			  PPI databases. 
-			  We built several PPI datasets using three archived versions of the STRING database (v9.1, v10, and v10.5) and the current version (v11). 
-			  For the current version, we created three datasets each excluding protein pairs present in each of the older versions.
-			  </p>
-			  
-              <p> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#PPIdatasets"> See the number of interactions in each version of the STRING database <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> </p>
-                
-				<div id="PPIdatasets" class="collapse">
-				
-				  <style>
-		            #table_datasets{
-		              padding-top: 25px; 
-					  padding-bottom: 25px; 
-		            }
-                  </style>
-				
-                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                  <script type="text/javascript">
-                  google.charts.load('current', {'packages':['table']});
-                  google.charts.setOnLoadCallback(drawTable);
-                  function drawTable() {
-                  var data = new google.visualization.DataTable();
-                  data.addColumn('string', 'STRING version');
-                  data.addColumn('string', 'Date');
-                  data.addColumn('number', 'Positive pairs');
-                  data.addRows([
-                  ['v9.1', '04/2015', 12681],
-                  ['v10', '05/2017', 26863],
-                  ['v10.5', '01/2019', 31384],
-                  ['v11 (excluding pairs in v9.1)', '10/2020', 41227],
-                  ['v11 (excluding pairs in v10)', '10/2020', 31642],
-                  ['v11 (excluding pairs in v10.5)', '10/2020', 23571]
-                  ]);
-                  var table = new google.visualization.Table(document.getElementById('table_datasets'));
-                  table.draw(data, {showRowNumber: false, width: '70%', height: '100%'});}
-                  </script>
-				
-                  <div id="table_datasets"></div>
-				
-				  <p style="text-align: justify;"> We considered the following criteria to select protein pairs from STRING:</p> 
-				  <p style="text-align: justify;"> (i) each protein must be annotated with the GO;</p> 
-				  <p style="text-align: justify;"> (ii) protein interactions must be experimentally determined or from curated databases;</p> 
-				  <p style="text-align: justify;"> (iii) interactions must have a confidence score above 950 to retain only high confidence interactions.</p> 
-				  <p style="text-align: justify;"> We employed random sampling to create negative pairs composed of the human proteins present in the positive pairs but without any STRING interactions 
-				  between them, building a balanced dataset. </p> 
-				
-				</div>
-			  
-            </div>
-			
-          </div>
-
-        </div>
-
+<!-- ======= Methodology Section ======= -->
+  <section id="methodology" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Methodology</h2>
       </div>
-  </section><!-- End Evaluation Section -->
+
+      <div class="row content mycontainer">
+        <img src="assets/img/Methodology.png" class="mimage">
+        <div class="mmiddle1">
+          <div class="mtext1"> 
+            <p><b>TÍTULO</b></p>
+            Texto
+	  </div>
+        </div>
+        <div class="mmiddle2">
+          <div class="mtext2"> 
+            <p><b>Título 2</b></p>  
+          Texto 2
+          </div>
+        </div>
+        <div class="mmiddle3">
+          <div class="mtext3">
+            <p><b> Título 3</b></p>
+            Texto 3
+          </div>
+        </div>   </div>
+  </section> <!-- End Methodology -->
   
   
   
