@@ -139,13 +139,13 @@
         <img src="assets/img/Methodology.png" class="mimage">
         <div class="mmiddle1">
           <div class="mtext1"> 
-            <p><b>Building a new Network</b></p>
+            <p><b><br>Building a new Network</b></p>
             Our approach consists in building a large network graph that contains both PPI interactions from four different sources, and also the Gene Ontology.
 	    In this new network, a node might represent either a protein, or a GO Term; Edges may represente either a PPI, or a GO annotation.</div>
         </div>
         <div class="mmiddle2">
           <div class="mtext2"> 
-            <p><b>Assessing the impact of the GO insertions</b></p>  
+            <p><b><br>Assessing the impact of the GO insertions</b></p>  
             We tested out the hypothesis that the insertion of semantic information enriches the PPI network, and improves the S2B's method performance. 
             This testing was carried out by running S2B ten times, for different kinds of graph networks, with 10 fixed sets of 100 random seed genes 
 	    from ALS and SMA disease modules.
@@ -153,7 +153,7 @@
         </div>
         <div class="mmiddle3">
           <div class="mtext3">
-            <p><b>The introduction of noise</b></p>
+            <p><b><br>The introduction of noise</b></p>
             By adding a lot of information to the network, we expected it to add some noise to the misture as well.
             Therefore, we tested the impact of trimming down the original PPI network, to just contain physical interactions.
 	    We also proceeded in a similar way with the GO, filtering it either vertically or horizontally.
@@ -180,10 +180,28 @@
           <div class="col-lg-6">
             <img src="assets/img/Results 1.jpg" class="img-fluid" width="100%">
           </div>
+	  <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  Our results show that in of itself, the GO doesn't produce a very significant increase in performance to the S2B Method. 
+                </li>
+                <br></br>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 However, preserving physical PPI's only does have a lot more of an impact to performance, which shows well the need to trim and filter our data.
+                </li> <br></br>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  Globally, taking into account performance and run times, the best combination seems to be the one that produces a network containing only physical PPI's, as well as only GO Terms referring to Biological Processes.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2> What about explainability? </h2>
+       	  <h3> The genes with the highest S2B score are more likely to be in the overlap between disease modules and, hence, more likely to be associated with both diseases.</h3>
           <div class="row justify-content-center">
             <div class="col-8" >
               <span> </span>
@@ -198,14 +216,14 @@
             <div class="faq-list">
               <ul>
                 <li data-aos="fade-up">
-                  Our algorithms cover eight distinct complex patterns, from which seven were found in the <i>cmt-conference</i> dataset. 
+                  Transcription regulation, apoptotic processes and gene expression highly involved in the pathological process of ALS and SMA. 
                 </li>
                 <br></br>
                 <li data-aos="fade-up" data-aos-delay="100">
-                 They were unable to find mappings for some of the patterns present in the reference, however, they found several mappings for patterns not present in the reference with high weighted precision.
+                 VCAM1 and TP53 genes encode for proteins related to signal transduction and membrane adhesion.
                 </li> <br></br>
                 <li data-aos="fade-up" data-aos-delay="200">
-                  These results show that the reference alignment is not exhaustive in all non­trivial correspondences that are valid between these two ontologies, suggesting that complex alignment references may be incomplete.
+                  These proteins have been highlighted as potential therapeutic candidates to ALS and SMA in experimental studies available in the literature.
                 </li>
               </ul>
             </div>
