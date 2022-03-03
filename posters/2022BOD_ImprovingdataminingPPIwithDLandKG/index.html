@@ -135,7 +135,7 @@
      <div class="col-xl-12 col-lg-12 text-center">
 	     
       <p style="text-align: justify;">  The <strong> Gene Ontology (GO) </strong> is one of the main resources of biological knowledge. It provides specific vocabulary for the description of several biological aspects pertaining to proteins, such as: the biological processes (BP) they may be involved in; their localization along the cellular components (CC); and their molecular functions (MF). </p>
-	    <p> Through the ontology’s annotations (GOA), different proteins can be linked to the description of their function.  </p>
+	    <p  style="text-align: justify;"> Through the ontology’s annotations (GOA), different proteins can be linked to the description of their function.  </p>
       <p>         </p>
       <img src="assets/img/onto4.drawio.png" alt="" class="img-fluid" style="max-width: 85%;" height="160">
       <!-- <a class="logo"><img src="assets/img/onto4.drawio.png" alt="" class="img-fluid" width="600" height="380"></a>  -->
@@ -175,7 +175,7 @@
 		<p style="text-align: justify;">     </p>
 		<p style="text-align: justify;">     </p>
 		<p><strong> Three Deep Learning pipelines used so far: </strong></p>
-		    <p> <strong>1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN).</strong> </p> 
+		    <p  style="text-align: justify;"> <strong>1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN).</strong> </p> 
             </div>
           </div>
         </div>
@@ -197,7 +197,7 @@
 	      <p>   </p>
 	      <img src="assets/img/mlp_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" >
               <h4>   </h4>
-	      <p> The MLP receives only raw node features as input, it doesn't consider the nodes' local neighborhoods.
+	      <p  style="text-align: justify;"> The MLP receives only raw node features as input, it doesn't consider the nodes' local neighborhoods.
 	      </p>
               
               <h4>   </h4>
@@ -206,7 +206,7 @@
 	      <h4>   </h4>
               <img src="assets/img/mlpn2v_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px">   
 	      <p>   </p>
-	      <p> The MLP + node2vec pipeline inputs both raw node features and a node2vec-made vector representation of random walks through the nodes’ neighborhoods onto the MLP. </p>
+	      <p  style="text-align: justify;"> The MLP + node2vec pipeline inputs both raw node features and a node2vec-made vector representation of random walks through the nodes’ neighborhoods onto the MLP. </p>
             </div>
           </div>
 
@@ -217,12 +217,12 @@
 	      <h4 style="text-align: center;"><a href="">  3) GCN</a></h4>
 	      <img src="assets/img/gcn_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" style="max-width: 15%;" height="250">     
 	      <h4>   </h4>
-              <p> 
-		It considers the nodes' neighborhood by message-passing. Based on the <strong>loopy-belief propagation</strong> method, where, for example, the unlabeled node h receives message m:
+              <p  style="text-align: justify;"> 
+		 The GCN considers the nodes' neighborhood by message-passing. Based on the <strong>loopy-belief propagation</strong> method, where, for example, the unlabeled node h receives message m:
 	      </p> 
 	      <img src="assets/img/equation.png" class="img-fluid" alt="" style="padding-top:20px" style="max-width: 15%;" height="12">
 	      <p>   </p>
-              <p> where 𝜓(𝑌𝑒,𝑌ℎ) represents the dependency between h and e and  ∅𝑓 is the initial/prior belief of the node’s label, being ℒ the set of all Y labels and e a neighboring node of h.
+              <p  style="text-align: justify;"> where 𝜓(𝑌𝑒,𝑌ℎ) represents the dependency between h and e and  ∅𝑓 is the initial/prior belief of the node’s label, being ℒ the set of all Y labels and e a neighboring node of h.
 	      </p>	  
              </div>
             </div>
@@ -248,7 +248,7 @@
 	  <p>  </p>
           <div class="row justify-content-center">
             <div class="col-8" >
-              <h3> <strong> Results for the multi-label classification task: </strong></h3>
+              <h3  style="text-align: justify;"> <strong> Results for the multi-label classification task: </strong></h3>
             </div>
           </div>
         </div>
@@ -261,7 +261,7 @@
 		</figure>
 		<!-- <p style="text-align: justify;"> Performance results for the metrics ROC-AUC and accuracy. </p> -->
 		<p>  </p>
-		<p><strong> The results above demonstrate that the enrichment of the PPI graph with knowledge of its entities has allowed for an overall significant increase of the performance of the machine learning methods evaluated.</strong> </p>
+		<p  style="text-align: justify;"><strong> The results above demonstrate that the enrichment of the PPI graph with knowledge of its entities has allowed for an overall significant increase of the performance of the machine learning methods evaluated.</strong> </p>
         </div> 
   </section><!-- End Results Section -->
 
