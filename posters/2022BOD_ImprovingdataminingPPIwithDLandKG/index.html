@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Improving Data Mining of PPI networks by combining DL with KGs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.2.0
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+	
+<body>
+
+
+<!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="logo"><img src="assets/img/logos/fculANDlasige.png" alt="" class="img-fluid"></a> 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#motivation">Motivation</a></li>
+          <li class="dropdown"><a href="#strategy"><span>Methodology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#datasets">Datasets</a></li>
+              <li><a href="#datasets">Data Mining Tasks</a></li>
+	      <li><a href="#datasets">Methodology Steps</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#results">Preliminary Results</a></li>
+          <li><a class="nav-link scrollto" href="#conclusions">Future Work</a></li>
+          <li><a class="nav-link scrollto" href="#authors">Authors</a></li>
+          <li><a class="nav-link scrollto" href="#funding">Funding</a></li
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+ </header><!-- End Header -->
+
+
+<!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 text-center">
+          <h1>Improving data mining of PPI networks by </h1>
+		  <h1>combining deep learning with knowledge graphs</h1> 
+          <h2>Laura Balbi, Catia Pesquita</h2>
+          <p>LASIGE, Faculdade de Ciências, Universidade de Lisboa</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="https://github.com/liseda-lab/liseda-lab.github.io/blob/main/posters/2022BOD_ImprovingdataminingPPIwithDLandKG/abstract.pdf" class="btn-get-started scrollto"> Abstract </a>
+      </div>
+
+  </section><!-- End Hero -->
+
+<main id="main">
+
+
+<!-- ======= About Section ======= -->
+ <section id="motivation" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2> Motivation </h2>
+        </div>
+
+        <div class="row content">
+
+           <div class="col-xl-12 col-lg-12 text-center">
+            <p style="text-align: justify;">
+            Graphs provide a data structure for knowledge representation and are useful for the description of relationships in all kinds of knowledge domains, including biological systems. 
+			</p>
+			<p style="text-align: justify;">
+			  <strong>Knowledge graphs (KG) </strong> allow for the representation of knowledge through a logical description of its concepts,  including of biological entities. By combining biological data with the relevant biological knowledge available, we’ll be bringing knowledge graphs into data mining tasks, and creating an opportunity for ML models to learn from the enriched graph data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+     </div>
+  </section><!-- End About Section -->
+  
+  <section id="objectives" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Objectives </h2>
+        </div>
+	<div class="row justify-content-center">
+            <p style="text-align: justify;">
+            This work aims to improve representation learning-based graph mining over PPI networks by enriching the graph with meaningful knowledge pertaining to its proteins, through:
+			</p>
+			<p style="text-align: justify;"><i class="bx bx-check-circle icon-help"></i>
+			 Investigation of different approaches to integrate the Gene Ontology with PPI networks and combine it with different deep learning pipelines. </p>
+			<p style="text-align: justify;"><i class="bx bx-check-circle icon-help"></i>
+			 Comparison and evaluation of the different combinations in benchmark data. </p>
+          </div>
+      </div>
+     </div>
+  </section><!-- End About Section -->
+
+  <section id="objectives2" class="about">
+   <div class="container" data-aos="fade-up">
+   <!-- <div class="row justify-content-center"> -->
+    <div class="row content">
+     <div class="col-xl-12 col-lg-12 text-center">
+	     
+      <p style="text-align: justify;">  The <strong> Gene Ontology (GO) </strong> is one of the main resources of biological knowledge. It provides specific vocabulary for the description of several biological aspects pertaining to proteins, such as: the biological processes (BP) they may be involved in; their localization along the cellular components (CC); and their molecular functions (MF). </p>
+	    <p  style="text-align: justify;"> Through the ontology’s annotations (GOA), different proteins can be linked to the description of their function.  </p>
+      <p>         </p>
+      <img src="assets/img/onto4.drawio.png" alt="" class="img-fluid" style="max-width: 85%;" height="160">
+      <!-- <a class="logo"><img src="assets/img/onto4.drawio.png" alt="" class="img-fluid" width="600" height="380"></a>  -->
+      <p style="text-align: justify;"> Above is part of a Knowledge Graph combining biological data (proteins) and its related knowledge, as described by the Gene Ontology’s terms, through annotations. </p>
+     </div>
+    </div>
+   </div>
+  </section><!-- End About Section -->
+
+	  
+<!-- ======= Data Section ======= -->
+  <section id="datasets" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+	<h2> Methodology </h2>
+	</div>	
+	<hr class="hr3">
+          <div class="row content">
+           <div class="col-lg-6">
+	      <h4 style="text-align: justify;"> Datasets used: </h4>
+              <p style="text-align: justify;"> <a href="https://arxiv.org/abs/2005.00687" >Open Graph Benchmark Project</a>’s PPI Networks (Ogbn-proteins and Ogbl-ppa);</p>
+	      <h4 style="text-align: justify;"> Data mining tasks: </h4>
+              <p style="text-align: justify;"> <i class="bx bx-check-circle icon-help"></i> Ogbn-proteins - multi-label classification, where labels represent protein functional classes; </p>
+              <p style="text-align: justify;"> <i class="bx bx-check-circle icon-help"></i> Ogbl-ppa  - PPI prediction problem.</p>
+	      <p style="text-align: justify;">   </p>
+	      <p style="text-align: justify;">   </p>      
+              <p style="text-align: justify;"> Ontology and annotations retrieved from the Gene Ontology website; </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+	      <h4 style="text-align: justify;">  Methodology steps: </h4>
+		<p style="text-align: justify;">   </p>
+		<p style="text-align: justify;"> <i class="bx bx-check-circle icon-help"></i> Enrich the datasets with the ontology and annotations between its terms and the dataset’s proteins;</p>
+		<p style="text-align: justify;"> <i class="bx bx-check-circle icon-help"></i> Investigate graph/machine learning methods that are able to explore the added information;</p>
+                <h4 style="text-align: justify;">     </h4>
+		<p style="text-align: justify;">     </p>
+		<p style="text-align: justify;">     </p>
+		<p style="text-align: justify;">     </p>
+		<p><strong> Three Deep Learning pipelines used so far: </strong></p>
+		    <p  style="text-align: justify;"> <strong>1) simple MLP; 2) MLP with node2vec node embedding; and 3) Graph Convolutional Network (GCN).</strong> </p> 
+		    <p style="text-align: justify;">     </p>
+            </div>
+          </div>
+        </div>
+	      
+	<hr class="hr3">
+	<p style="text-align: justify;">     </p>
+	<div class="col-xs-11 col-lg-11 text-center">
+	<div class="row justify-content-center">
+          <h3 style="text-align: center;"> <strong> Pipelines   </strong></h3>
+        </div>
+	</div>
+	<p style="text-align: justify;">     </p>
+        <div class="row">
+          <div class="col-12 text-center">
+              <!-- <div class="row align-content-center"> -->
+              <h4>   </h4>
+	      <p>   </p>
+              <h4 style="text-align: center;"><a href="">  1) MLP (simple feed-forward neural network)</a></h4>
+	      <p>   </p>
+	      <img src="assets/img/mlp_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" >
+              <h4>   </h4>
+	      <p  style="text-align: justify;"> The MLP receives only raw node features as input, it doesn't consider the nodes' local neighborhoods.
+	      </p>
+              
+              <h4>   </h4>
+	      <p>   </p> 
+              <h4 style="text-align: center;"><a href="">  2) MLP with Node2Vec embeddings</a></h4>
+	      <h4>   </h4>
+              <img src="assets/img/mlpn2v_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px">   
+	      <p>   </p>
+	      <p  style="text-align: justify;"> The MLP + node2vec pipeline inputs both raw node features and a node2vec-made vector representation of random walks through the nodes’ neighborhoods onto the MLP. </p>
+            </div>
+          </div>
+
+          <div class="col-xl-11 col-lg-11 text-center">
+           <div class="row justify-content-center">
+              <h4>   </h4>
+	      <p>   </p>
+	      <h4 style="text-align: center;"><a href="">  3) GCN</a></h4>
+	      <img src="assets/img/gcn_lastb.drawio.png" class="img-fluid" alt="" style="padding-top:20px" style="max-width: 15%;" height="250">     
+	      <h4>   </h4>
+              <p  style="text-align: justify;"> 
+		 The GCN considers the nodes' neighborhood by message-passing. It's classification is based on the <strong>loopy-belief propagation</strong> method, where, for example, the unlabeled node h receives message m:
+	      </p> 
+	      <img src="assets/img/equation.png" class="img-fluid" alt="" style="padding-top:20px" style="max-width: 15%;" height="12">
+	      <p>   </p>
+              <p  style="text-align: justify;"> where 𝜓(𝑌𝑒,𝑌ℎ) represents the dependency between h and e and  ∅𝑓 is the initial/prior belief of the node’s label, being ℒ the set of all Y labels and e a neighboring node of h.
+	      </p>	  
+             </div>
+            </div>
+	    <div id="PPIdatasets" class="collapse">
+				
+			  
+           </div>
+			
+          </div>
+
+        </div>
+
+      </div>
+  </section><!-- End Evaluation Section -->
+  
+
+<!-- ======= Results Section ======= -->
+  <section id="results" class="results">
+      <div class="container" data-aos="fade-up">
+		
+        <div class="section-title">
+          <h2> Preliminary Results </h2>
+	  <p>  </p>
+          <div class="row justify-content-center">
+            <div class="col-11" >
+              <h3  style="text-align: justify;"> <strong> Results for the multi-label classification task: </strong></h3>
+            </div>
+          </div>
+        </div>
+
+
+	<div class="row justify-content-center">
+	<figure>
+	<img src="assets/img/table.png" class="img-fluid" alt="" style="padding-top:20px" style="max-width: 15%;" height="130">
+		<figcaption> Performance results for the metrics ROC-AUC and accuracy. </figcaption>
+		</figure>
+		<!-- <p style="text-align: justify;"> Performance results for the metrics ROC-AUC and accuracy. </p> -->
+		<p>  </p>
+		<p  style="text-align: justify;"><strong> The results above demonstrate that the enrichment of the PPI graph with knowledge of its entities has allowed for an overall significant increase of the performance of the machine learning methods evaluated.</strong> </p>
+        </div> 
+  </section><!-- End Results Section -->
+
+
+
+ <!-- ======= Conclusions Section ======= -->
+  <section id="conclusions" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Future Work </h2>
+        </div>
+	<div class="row justify-content-center">
+	  <div class="col-13" >
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  <i class="bx bx-check-circle icon-help"></i> <a> In the near future these implementations will be adapted into the protein-protein interaction prediction problem. </a> 
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-check-circle icon-help"></i> <a> Furthermore, the selection of machine learning pipelines evaluated will be expanded into more complex learning models and diverse approaches will be explored to filtering the ontology data being injected into the PPI networks. </a>
+                </li>
+              </ul>
+            </div>
+	   </div>
+	  </div>
+
+      </div>
+  </section><!-- End Conclusions Section -->
+
+
+
+
+<!-- ======= Authors Section ======= -->
+  <section id="authors" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Authors</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/authors/LauraBalbi.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:lbalbi@lasige.di.fc.ul.pt"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> Laura Balbi </h4>
+                <span>LASIGE, Faculdade de Ciências </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/authors/ProfCatia.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=8nGYegMAAAAJ&hl"><i class="bi bi-google"></i></a>
+                  <a href="https://twitter.com/CPesquita"><i class="bi bi-twitter"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> Catia Pesquita </h4>
+                <span>LASIGE, Faculdade de Ciências</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </section><!-- End Contact Section -->
+
+
+
+<!-- ======= Funding Section ======= -->
+  <section id="funding" class="funding">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Funding </h2>
+          <p> Catia Pesquita, Laura Balbi are funded by the FCT through LASIGE Research Unit, ref. UIDB/00408/2020 and ref. UIDP/00408/2020.</p> 
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/logos/ulisboa.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/logos/fcul.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/logos/fct.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <img src="assets/img/logos/lasige.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+     </div>
+  </section><!-- End Funding Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>XAI for understanding associations between disease-related genes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.2.0
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a class="logo"><img src="assets/img/logos/fcul.png" alt="" class="img-fluid"
+	 class="logo"><img src="assets/img/logos/lasige.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#motivation">Motivation</a></li>
+	  <li><a class="nav-link scrollto" href="#background">Background</a></li>
+	  <li><a class="nav-link scrollto" href="#methodology">Methodology</a></li>
+	  <li><a class="nav-link scrollto" href="#results">Results</a></li>
+          <li><a class="nav-link scrollto" href="#conclusions">Conclusions</a></li>
+          <li><a class="nav-link scrollto" href="#authors">Authors</a></li>
+          <li><a class="nav-link scrollto" href="#funding">Funding</a></li
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 text-center">
+          <h1>Explainable AI for understanding associations between disease related genes</h1>
+          <h2>José Zenóglio de Oliveira<sup>1</sup>, Francisco Pinto<sup>2</sup>, Catia Pesquita<sup>1</sup></h2>
+          <p><br><sup>1</sup>LASIGE, Faculdade de Ciências, Universidade de Lisboa<br>
+          <sup>2</sup>BioISI, Faculdade de Ciências, Universidade de Lisboa</p>
+        </div>
+	      
+      </div>
+
+        <div class="text-center">
+          <a href="abstract.pdf" class="btn-get-started scrollto">Abstract</a>
+        </div>
+	    
+      </div>
+	    
+    </div>
+  </section><!-- End Hero -->
+
+<main id="main">
+
+<!-- ======= Motivation Section ======= -->
+  <section id="motivation" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Motivation </h2>
+        </div>
+
+        <div class="row content">
+
+          <div class="col-lg-6">
+            <p style="text-align: justify;"> In the biomedical field, Machine Learning and Artificial Intelligence models have shown impressive successes, but they often lack some degree of explainability, in the sense <a href="https://arxiv.org/pdf/1710.00794.pdf">they fail to provide human-understandable logical decisions</a>.</p>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0">
+	    <p style="text-align: justify;"> Discovering Disease Genes (DGs) is one particular task in the biomedical research field that requires some degree of explainability, particularly for prioritizing genes for further research.</p>
+          </div>
+        </div>
+      </div>
+  </section><!-- End Motivation Section -->
+
+	
+<!-- ======= Background Section ======= -->
+  <section id="background" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Background </h2>
+        </div>
+	      
+	<div class="row justify-content-center">
+	  <div class="col-8" >
+	    <p style="text-align: justify;"> <a href="https://www.nature.com/articles/s41598-018-29990-7.pdf">S2B</a> is a network-based method that uses protein-protein interaction (PPI) networks to predict DGs associated with two similar diseases.</p>
+            <p style="text-align: justify;"> In this case, it’s important to understand why certain genes may be related with two similar diseases, and adding knowledge to the process may improve gene prioritization.</p>
+            <img src="assets/img/S2B - 2.png" class="img-fluid">
+	  </div>
+      </div>
+  </section><!-- End Background Section -->
+
+	
+
+<!-- ======= Methodology Section ======= -->
+  <section id="methodology" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Methodology</h2>
+      </div>
+
+      <div class="row content mycontainer">
+        <img src="assets/img/Methodology.png" class="mimage">
+        <div class="mmiddle1">
+          <div class="mtext1"> 
+            <p><b><br>Building a new Network</b></p>
+            Our approach consists in building a large network graph that contains both PPI interactions from four different sources, and also the Gene Ontology.
+	    In this new network, a node might represent either a protein, or a GO Term; Edges may represente either a PPI, or a GO annotation.</div>
+        </div>
+        <div class="mmiddle2">
+          <div class="mtext2"> 
+            <p><b><br>Assessing the impact of the GO insertions</b></p>  
+            We tested out the hypothesis that the insertion of semantic information enriches the PPI network and improves the S2B's method performance. 
+            This testing was carried out by running S2B ten times, for different kinds of graph networks, with 10 fixed sets of 100 random seed genes 
+	    from ALS and SMA disease modules.
+          </div>
+        </div>
+        <div class="mmiddle3">
+          <div class="mtext3">
+            <p><b><br>The introduction of noise</b></p>
+            By adding a lot of information to the network, we expected to add some noise to the mixture as well.
+            Therefore, we tested the impact of trimming down the original PPI network, to just contain physical interactions.
+	    We also proceeded in a similar way with the GO, filtering it either vertically or horizontally.
+	</div>
+        </div>
+      </div> 
+    </div>
+  </section> <!-- End System -->
+
+
+
+<!-- ======= Results Section ======= -->
+  <section id="results" class="results">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2> Results </h2>
+          <div class="row justify-content-center">
+            <div class="col-8" >
+              <span> </span>
+            </div>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <img src="assets/img/Results 1.jpg" class="img-fluid" width="100%">
+          </div>
+	  <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  Our results show that just by itself, the GO doesn't produce a very significant increase in performance to the S2B Method when added to the network. 
+                </li>
+                <br></br>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 However, when using a network with just physical PPI's, we can see a noticeable increase in performance, which shows well the need to trim and filter our data.
+                </li> <br></br>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  Globally, taking into account performance and run times, the best combination seems to be the one that uses a network containing only physical PPI's, as well as only GO Terms referring to Biological Processes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h3> <br><br>What about explainability? </h3>
+       	  <p> The genes with the highest S2B score are more likely to be in the overlap between disease modules and, hence, more likely to be associated with both diseases.</p>
+          <div class="row justify-content-center">
+            <div class="col-8" >
+              <span> </span>
+            </div>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <img src="assets/img/Results 2.jpg" class="img-fluid" width="100%">
+          </div>
+	<div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  Transcription regulation, apoptotic processes and gene expression highly involved in the pathological process of ALS and SMA. 
+                </li>
+                <br></br>
+                <li data-aos="fade-up" data-aos-delay="100">
+                 VCAM1 and TP53 genes encode for proteins related to signal transduction and membrane adhesion.
+                </li> <br></br>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  These proteins have been highlighted as potential therapeutic candidates to ALS and SMA in experimental studies available in the literature.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section><!-- End Results Section -->
+
+
+
+ <!-- ======= Conclusions Section ======= -->
+  <section id="conclusions" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Conclusions </h2>
+        </div>
+        
+		<div class="row justify-content-center">
+		  <div class="col-8" >
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  <i class="bx bx-check-circle icon-help"></i> <a> The inclusion of the GO into the PPI network improves S2B’s performance. Filtering and trimming brings further improvement. </a> 
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-check-circle icon-help"></i> <a> The combination between using only physical PPI’s, and the GO terms referring to biological processes produces the best results yet. </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-check-circle icon-help"></i> <a> We also bring more explainability to the method, and are now able to interpret why certain genes are such strong candidates. </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-check-circle icon-help"></i> <a> Future work will consist in producing a weighted network. We’ll attribute weights to edges between nodes based on the semantic similarity between their associated GO terms to uncover more relevant interactions.</a>
+                </li>
+              </ul>
+            </div>
+		  </div>
+		</div>
+
+      </div>
+  </section><!-- End Conclusions Section -->
+
+
+
+	<!-- ======= Authors Section ======= -->
+	<section id="authors" class="team section-bg">
+	<div class="container" data-aos="fade-up">
+
+	<div class="section-title">
+	  <h2>Authors</h2>
+	</div>
+
+	<div class="row justify-content-center">
+
+	  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+	    <div class="member">
+	      <div class="member-img">
+		<img src="assets/img/Authors/1.jpg" class="img-fluid" alt="">
+		<div class="social">
+		  <a href="mailto:jose.miguel.oliveira@campus.ul.pt"><i class="bi bi-envelope"></i></a>
+		  <a href="https://www.linkedin.com/in/josé-zenóglio-de-oliveira/"><i class="bi bi-linkedin"></i></a>
+		</div>
+	      </div>
+	      <div class="member-info">
+		<h4>José Zenóglio de Oliveira</h4>
+		<span>LASIGE, Faculdade de Ciências </span>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+	    <div class="member">
+	      <div class="member-img">
+		<img src="assets/img/Authors/2.jpg" class="img-fluid" alt="">
+		<div class="social">
+		  <a href="https://scholar.google.com/citations?user=HnLOaZcAAAAJ&hl=en"><i class="bi bi-google"></i></a>
+		  <a href="mailto:frpinto@ciencias.ulisboa.pt"><i class="bi bi-envelope"></i></a>
+		</div>
+	      </div>
+	      <div class="member-info">
+		<h4> Francisco Pinto </h4>
+		<span> BioISI, Faculdade de Ciências </span>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+	    <div class="member">
+	      <div class="member-img">
+		<img src="assets/img/Authors/4.jpg" class="img-fluid" alt="">
+		<div class="social">
+		  <a href="https://scholar.google.com/citations?user=8nGYegMAAAAJ&hl"><i class="bi bi-google"></i></a>
+		  <a href="https://twitter.com/CPesquita"><i class="bi bi-twitter"></i></a>
+		</div>
+	      </div>
+	      <div class="member-info">
+		<h4>Catia Pesquita </h4>
+		<span>LASIGE, Faculdade de Ciências</span>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>
+
+	</div>
+	</section><!-- End Contact Section -->
+
+
+    <!-- ======= Funding Section ======= -->
+    <section id="funding" class="funding">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Funding </h2>
+          <p>This work was supported by the Fundação para a Ciência e a Tecnologia (FCT) under LASIGE Research Unit ref. UIDB/00408/2020 and UIDP/00408/2020, and Partially Supported by FCT Centre grants to BioISI ref. UIDB/04046/2020 and UIDP/04046/2020.</p>
+          </div>
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-2 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/logos/ulisboa.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/logos/fcul.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/logos/fct.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/logos/lasige.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+        </div>
+    </section><!-- End Funding Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
