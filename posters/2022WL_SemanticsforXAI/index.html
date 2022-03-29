@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Visualization of KG for XAI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.7.0
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"><img src="assets/img/logos/fcul.png"><img src="assets/img/logos/lasige.jpg"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#motivation">Motivation</a></li>
+          <li class="dropdown"><a href="#methods"><span>Methods</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#data">Data</a></li>
+              <li><a href="#pipeline">Pipeline</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#results">Results</a></li>
+          <li><a class="nav-link scrollto" href="#references">References</a></li>
+          <li><a class="nav-link scrollto" href="#authors">Authors</a></li>
+          <li><a class="nav-link scrollto" href="#funding">Funding</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Visualization of Knowledge Graphs for Explainable Artificial Intelligence</h1>
+          <h2>Filipa Serrano, Catia Pesquita</h2>
+          <p>LASIGE, Faculdade de Ciências, Universidade de Lisboa</p>
+        </div>
+      </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Motivation Section ======= -->
+    <section id="motivation" class="services faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Motivation</h2>
+        </div>
+        <div class="row icon-boxes faq-list">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <center>
+                  <p class="description">Artificial intelligence (AI) and Machine Learning (ML) have been achieving great results in the biomedical domain. There are valuable deep learning approaches with promising results, but they are “black-box” - their models are uninterpretable by humans. Their lack of explainability severely limits their trustability, specially in sensitive fields, where errors in predictions can have very damaging outcomes. 
+                    So, there is a growing interest in the field of explainable AI (XAI).</p>
+                  <br>
+                  <img src="assets/img/blackbox.png" class="img-fluid" alt="" width="300" height="300">
+                </center>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <center>
+                  <p class="description">Semantic Explanations emerge as a strategy for explainable AI applications. They use Ontologies and Knowledge Graphs (KG), which model data and represent it in a connected structure. KG and their semantic context can be used for explainable AI in several different ways, such as to encode context, to better organize features, or to provide a semantic layer to explanations.</p>
+                  <br>
+                  <img src="assets/img/context.png" class="img-fluid" alt="" height="300">
+                </center>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="icon-box">
+                <center>
+                  <p class="description">  Our goal is to investigate how visualizations can support XAI for drug therapy recommendations in personalized oncology in the context of the KATY project.</p>
+                  <br>
+                  <i class="bx bx-check-circle icon-help" id="wvref"></i>
+                  <br>
+                  <p class="description"> Filter relevant paths in the KG that connect a patient to their predicted drug
+                      Design a visualization approach to increase understanding of explanations for AI predictions</p>
+                  <br>
+                  <i class="bx bx-check-circle icon-help" id="wvref"></i>
+                  <br>
+                  <p class="description">Design a visualization approach to increase understanding of explanations for AI predictions</p>
+                </center>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Motivation Section -->
+ 
+
+    <!-- ======= Data Section ======= -->
+    <section id="data" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Data</h2>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <br>
+            <br>
+            <br>
+            <p>
+              This project is integrated in the european project- <a href= "https://katy-project.eu/"  target="_blank">Knowledge At the Tip of Your fingers: Clinical Knowledge for Humanity (KATY)</a>.
+            </p>
+            <p>
+              Clinical and biological data, regarding each cancer patient, is being collected by investigators to produce biomedical datasets. This data can then be used by Artificial Intelligence models to make clinical predictions.
+            </p>
+            <p>
+              The biomedical datasets will also be integrated into a KG that also contains 28 biomedical ontologies that fully cover the domain of the study, and this KG is used to generate the semantic explanations for the AI predictions.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/KATY_Infographic.png" height="380">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Data Section -->
+
+    <!-- ======= Pipeline Section ======= -->
+    <section id="pipeline" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pipeline</h2>
+        </div>
+        <img src="assets/img/Pipeline.PNG" class="mx-auto d-block" style="max-width: 100%;height: auto;">
+        <div class="row justify-content-center">
+          <div class="col-8" >
+            <br>
+            <span>
+              <img src="assets/img/numbers/one.png" height="35"> Simulating clinical predictions of personalized drugs for patients based on data from <a href="https://portal.gdc.cancer.gov/" target="_blank">The Cancer Genome Atlas</a>, since the real AI predictions are not available yet.
+            </span>
+            <br>
+            <br>
+            <span>
+              <img src="assets/img/numbers/two.png" height="35">  Generating all the paths that connect a patient to their predicted drug is not feasible, since there is a large amount of information represented in the KG. The challenge is to create SPARQL queries that will reduce the search space, while capturing important paths that provide high quality explanations. This step will include some iterations, by evaluating the resulting paths and rewriting the queries.
+            </span>
+            <br>
+            <br>
+            <span>
+              <img src="assets/img/numbers/three.png" height="35">  After having some candidate explanations, there will be another step of filtering only the best ones, since clinicians cannot afford to analyze multiple different explanations, due to time constraints, as well as the loss in interpretability if multiple explanations are presented. 
+            </span>
+            <br>
+            <br>
+            <span>
+              <img src="assets/img/numbers/four.png" height="35">  These explanations can then be evaluated in two ways: 
+              Directly, by a domain expert that compares the explanation with bibliographic references.
+              Using a visualization tool, developed for this purpose, for small scale user studies with medical professionals.
+              
+            </span>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Pipeline Section -->
+
+    <!-- ======= Results Section ======= -->
+    <section id="results" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Results</h2>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <img src="assets/img/results.png" class="img-fluid" width="100%">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  WebVOWL <a href="#references">[1]</a> was chosen as the base visualization tool since it is very complete, and it is open source. It uses a Visual Notation for OWL Ontologies (VOWL), which defines a set of graphical rules that allow a visual representation of KG. 
+                </li>
+                <br></br>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  For this project, VOWL was extended to support the representation of individuals (represented by ovals) and their relations. 
+                </li> <br></br>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  The representation of individuals is essential in personalized medicine to distinguish and represent individual patients. The extension of this notation will hopefully be useful for other applications as well.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Results Section -->
+
+    <!-- ======= References Section ======= -->
+    <section id="references" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>References</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-book-open icon-help" id="wvref"></i> <a href="http://www.semantic-web-journal.net/system/files/swj1114.pdf" target="_blank" data-bs-target="#faq-list-1">1. Steffen Lohmann, Stefan Negru, Florian Haag, and Thomas Ertl. 2016. Visualizing ontologies with VOWL. Semantic Web 7, 4 (2016), 399–419. 
+                https://doi.org/10.3233/SW-150200</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section><!-- End References Section -->
+
+
+    <!-- ======= Authors Section ======= -->
+    <section id="authors" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Authors</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/authors/Filipa.JPG" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:fserrano@lasige.di.fc.ul.pt"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/filipa-serrano-557055158/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Filipa Serrano</h4>
+                <span>LASIGE, Faculdade de Ciências </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/authors/ProfCatia.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://scholar.google.com/citations?user=8nGYegMAAAAJ&hl"><i class="bi bi-google"></i></a>
+                  <a href="https://twitter.com/CPesquita"><i class="bi bi-twitter"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Catia Pesquita </h4>
+                <span>LASIGE, Faculdade de Ciências</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Funding Section ======= -->
+    <section id="funding" class="funding">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> Funding </h2>
+          <p>This work was supported by FCT through the LASIGE Research Unit (UIDB/00408/2020 and UIDP/00408/2020) and by the KATY project which has received funding from the European Union’s Horizon 2020 research and innovation program under grant agreement No 101017453.</p>
+          </div>
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-2 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/logos/ulisboa.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/logos/fcul.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/logos/fct.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/logos/lasige.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/logos/katy.svg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+    </section><!-- End Funding Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
