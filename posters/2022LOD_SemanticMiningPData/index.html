@@ -73,8 +73,8 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Semantic data integration for explainable artificial intelligence in personalized medicine</h1> <!-- CHANGE -->
-          <h2>Patrícia Eugénio, Daniel Faria, Catia Pesquita</h2> <!-- CHANGE -->
+          <h1>Linking Patient Data to Ontologies to Support Semantic Mining</h1> <!-- CHANGE -->
+          <h2>Ricardo M.S. Carvalho, Daniela Oliveira, Catia Pesquita</h2> <!-- CHANGE -->
           <p>LASIGE, Faculdade de Ciências, Universidade de Lisboa</p>
         </div>
       </div>
@@ -84,58 +84,85 @@
   <main id="main">
 
     <!-- ======= Motivation Section ======= -->
-    <section id="motivation" class="services faq section-bg">
+    <section id="motivation" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Motivation</h2>
+        <div class="row content">
+
+          <div class="col-lg-4">
+            <div class="title">
+            <h2>Why approach ICU readmission?</h2>
+            </div>
+            <p style="text-align: justify;"> Readmissions to intensive care units (ICUs) are both a health risk for patients and a financial burden for health facilities.</p>
+            <p>With the advent of electronic health records (EHRs), healthcare has become more data-driven and with it, more machine learning methods have been used to predict on ICU settings. However, these methods disregard the meaning and relationships of data objects, working with a small portion of information.</a>.</p>
+          </div>
+
+          <div class="col-lg-4">
+            <center><!-- CHANGE -->
+              <img src="assets/img/iceberg.png" class="img-fluid" alt="Iceberg" width = "275" height="275">
+            </center>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="title">
+            <h2>Why ontologies?</h2>
+            </div>
+            <p style="text-align: justify;"> Ontologies and knowledge graphs (KG) can help bridge the gap between data and scientific context.</p>
+            <p>Linking EHR data to ontologies through semantic annotations, feed an additional layer of information about into machine learning systems.</p>
+            <p>The use of a graph representation of ontologies formalises a knowledge graph that enables the detailed description of clinical metadata with objects and relationships.</p>
+          </div>
+
         </div>
-        <div class="row icon-boxes faq-list">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+      </div>
+  </section><!-- End Motivation Section -->
+
+  <section id="motivation" class="services faq section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row icon-boxes faq-list">
+        <div class="col-lg-6">
+          <div class="icon-box">
+            <center><!-- CHANGE -->
+                <div class="title">
+                <h2>Why approach ICU readmission?</h2>
+                </div>
+                <p class="description"> (XAI).</p>
+                <br>
+
+              </center>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <center><!-- CHANGE -->
+                <img src="assets/img/iceberg.png" class="img-fluid" alt="" height="300">
+              </center>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <center><!-- CHANGE -->
-                  <p class="description">Artificial intelligence (AI) and Machine Learning (ML) have been achieving great results in the biomedical domain. There are valuable deep learning approaches with promising results, but they are “black-box” - their models are uninterpretable by humans. Their lack of explainability severely limits their trustability, specially in sensitive fields, where errors in predictions can have very damaging outcomes. 
-                    So, there is a growing interest in the field of explainable AI (XAI).</p>
-                  <br>
-                  <img src="assets/img/blackbox.png" class="img-fluid" alt="" width="300" height="300">
-                </center>
-              </div>
+                <p class="description">  Our goal is to investigate how visualizations can support XAI for drug therapy recommendations in personalized oncology in the context of the KATY project.</p>
+                <br>
+                <i class="bx bx-check-circle icon-help" id="wvref"></i>
+                <br><!-- CHANGE -->
+                <p class="description"> Filter relevant paths in the KG that connect a patient to their predicted drug
+                    Design a visualization approach to increase understanding of explanations for AI predictions</p>
+                <br>
+                <i class="bx bx-check-circle icon-help" id="wvref"></i>
+                <br><!-- CHANGE -->
+                <p class="description">Design a visualization approach to increase understanding of explanations for AI predictions</p>
+              </center>
             </div>
-
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box">
-                <center><!-- CHANGE -->
-                  <p class="description">Semantic Explanations emerge as a strategy for explainable AI applications. They use Ontologies and Knowledge Graphs (KG), which model data and represent it in a connected structure. KG and their semantic context can be used for explainable AI in several different ways, such as to encode context, to better organize features, or to provide a semantic layer to explanations.</p>
-                  <br>
-                  <img src="assets/img/context.png" class="img-fluid" alt="" height="300">
-                </center>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon-box">
-                <center><!-- CHANGE -->
-                  <p class="description">  Our goal is to investigate how visualizations can support XAI for drug therapy recommendations in personalized oncology in the context of the KATY project.</p>
-                  <br>
-                  <i class="bx bx-check-circle icon-help" id="wvref"></i>
-                  <br><!-- CHANGE -->
-                  <p class="description"> Filter relevant paths in the KG that connect a patient to their predicted drug
-                      Design a visualization approach to increase understanding of explanations for AI predictions</p>
-                  <br>
-                  <i class="bx bx-check-circle icon-help" id="wvref"></i>
-                  <br><!-- CHANGE -->
-                  <p class="description">Design a visualization approach to increase understanding of explanations for AI predictions</p>
-                </center>
-              </div>
-            </div>
-
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Motivation Section -->
- 
+
+    </div>
+  </section><!-- End Motivation Section -->
+
 
     <!-- ======= Data Section ======= --> <!-- CHANGE -->
     <section id="data" class="about">
