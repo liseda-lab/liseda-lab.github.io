@@ -37,6 +37,30 @@ h3
     margin-bottom:20px;
 }
 
+h4
+{
+  font-size: 17px;
+  color: #124265;
+}
+
+h5
+{
+  font-size: 12px;
+}
+h6
+{
+  font-size: 27px;
+  color: #124265;
+}
+.verticalLineR {
+  border-right: thick solid #FFD579;
+  width:100%
+}
+.verticalLineL {
+  border-left: thick solid #FFD579;
+  padding-left: 10px;
+  width:100%
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
