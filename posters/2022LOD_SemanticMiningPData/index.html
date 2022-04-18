@@ -160,7 +160,7 @@
     </section>
     <!-- ======= Methodology ======= --> <!-- CHANGE -->
     <section id="methodology" class="about">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Methodology</h2>
         </div>
@@ -177,18 +177,18 @@
             </p>
             <br>
             <span>
-              <img src="assets/img/number-one.png" height="25"> Data collection and pre-processing, where the Eletronic Health Records for the MIMIC-III dataset are collected and processed to meet implementation requirements.
+              <img src="assets/img/number-one.png" height="15"> Data collection and pre-processing, where the Eletronic Health Records for the MIMIC-III dataset are collected and processed to meet implementation requirements.
             </span>
             <br>
             <br>
             <span>
-              <img src="assets/img/number-2.png" height="25"> Semantic feature generation is a multi-step part of the methodology that begins with ontology selection for mapping, followed by semantic annotation to match 
+              <img src="assets/img/number-2.png" height="15"> Semantic feature generation is a multi-step part of the methodology that begins with ontology selection for mapping, followed by semantic annotation to match 
               clinical terms with ontology class metadata, and concludes with knowledge graph embedding, which converts semantic metadata into vectors that can be interpreted by machine learning.
             </span>
             <br>
             <br>
             <span>
-              <img src="assets/img/number-3.png" height="25"> Readmission prediction is the final part of the method where machine learning algorithms are used with the semantically enriched clinical data to produce readmission predictions. 
+              <img src="assets/img/number-3.png" height="15"> Readmission prediction is the final part of the method where machine learning algorithms are used with the semantically enriched clinical data to produce readmission predictions. 
               The performance of the algorithms is measured to compare with the state of the art and benchmark models.
             </span>
           </div>
@@ -200,11 +200,48 @@
           <br>
           &nbsp; 
         </div>
+        <!-- ======= Division ======= -->
         <div class="row content">
           <div class="col-lg-6">
             <div class="title">
               <h3>Method Fundamentals</h3>
             </div>
+            <h6>Semmantic Annotation</h6>
+            <span>
+              <img src="assets/img/button.png" height="10"> Description of objects by association with ontology concepts. 
+            </span>
+            <br>
+            <span>
+              <img src="assets/img/button.png" height="10"> Annotators link concepts to classes from ontologies to extract semantic components. 
+            </span>
+            <br>
+            <span>
+              <img src="assets/img/button.png" height="10"> Patients are described by the objects and their semantic layers. 
+            </span>
+            <br>
+            <br>
+            <!-- ======= Division ======= -->
+            <h6>Knowledge Graph embedding</h6>
+            <span>
+              <img src="assets/img/button.png" height="10"> The annotated information is linked to the corresponding ontology information.
+            </span>
+            <br>
+            <span>
+              <img src="assets/img/button.png" height="10"> Vector representations are learned for each annotated class using RDF2Vec. 
+            </span>
+            <br>
+            <span>
+              <img src="assets/img/button.png" height="10"> Patients are described by the vectors of the classes that are merged to create one vector per patient. 
+            </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/Esquema.png" class="mx-auto d-block" style="max-width: 100%;height: auto;">
+          </div>
+          <br>
+          <br>
+          <br>
+          &nbsp; 
+        </div>
       </div>
     </section><!-- End Data Section -->
 
