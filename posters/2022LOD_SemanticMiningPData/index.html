@@ -207,6 +207,7 @@
               <h3>Method Fundamentals</h3>
             </div>
             <h6>Semmantic Annotation</h6>
+            <br>
             <span>
               <img src="assets/img/button.png" height="10"> Description of objects by association with ontology concepts. 
             </span>
@@ -222,6 +223,7 @@
             <br>
             <!-- ======= Division ======= -->
             <h6>Knowledge Graph embedding</h6>
+            <br>
             <span>
               <img src="assets/img/button.png" height="10"> The annotated information is linked to the corresponding ontology information.
             </span>
@@ -245,39 +247,52 @@
       </div>
     </section><!-- End Data Section -->
 
-    <!-- ======= Pipeline Section ======= --> <!-- CHANGE -->
-    <section id="pipeline" class="about">
-      <div class="container">
+    <!-- ======= Experimental Design ======= --> <!-- CHANGE -->
+    <section id="experimentaldesign" class="about">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Pipeline</h2>
+          <h2>Experimental Design</h2>
         </div>
-        <img src="assets/img/Pipeline.PNG" class="mx-auto d-block" style="max-width: 100%;height: auto;">
         <div class="row justify-content-center">
           <div class="col-8" >
             <br>
             <span>
-              <img src="assets/img/numbers/one.png" height="35"> Simulating clinical predictions of personalized drugs for patients based on data from <a href="https://portal.gdc.cancer.gov/" target="_blank">The Cancer Genome Atlas</a>, since the real AI predictions are not available yet.
+              <img src="assets/img/number-one.png" height="25"> <h6>Baseline Reproduction</h6> In order to evaluate the performance of the proposed methodology, 
+              a basis of comparison was established based on the current state of the art. 
+              This allows for a more transparent assessment than simply using the reported values, 
+              as a replication is carried out in the same environment, allowing for performance comparisons and improvement measurements.
             </span>
             <br>
             <br>
             <span>
-              <img src="assets/img/numbers/two.png" height="35">  Generating all the paths that connect a patient to their predicted drug is not feasible, since there is a large amount of information represented in the KG. The challenge is to create SPARQL queries that will reduce the search space, while capturing important paths that provide high quality explanations. This step will include some iterations, by evaluating the resulting paths and rewriting the queries.
+              <img src="assets/img/number-2.png" height="25"> <h6>One Ontology Embedding</h6> Does an evaluation of the impact of considering embeddings for all the features we extracted. 
+              Each feature set is represented by an NCIT RDF2Vec embedding vector.
             </span>
             <br>
             <br>
             <span>
-              <img src="assets/img/numbers/three.png" height="35">  After having some candidate explanations, there will be another step of filtering only the best ones, since clinicians cannot afford to analyze multiple different explanations, due to time constraints, as well as the loss in interpretability if multiple explanations are presented. 
+              <img src="assets/img/number-3.png" height="25"> <h6>Multiple Ontologies Embeddings</h6> Does a comparison of using embeddings based on different ontologies: 
+              NCIT for the initial diagnosis and the MIMIC-III proposed ontologies for each respective feature type. 
+              Each feature set is represented by an RDF2Vec embedding made with the specific ontology. 
             </span>
             <br>
             <br>
             <span>
-              <img src="assets/img/numbers/four.png" height="35">  These explanations can then be evaluated in two ways: 
-              Directly, by a domain expert that compares the explanation with bibliographic references.
-              Using a visualization tool, developed for this purpose, for small scale user studies with medical professionals.
+              <img src="assets/img/number-four.png" height="25"> <h6>Snap Shot Predictions</h6> To capture the evolution of an ICU stay and close the gap with a real-world scenario, 
+              predictions are made strategically at the four most informative points of the stay. Admission, Diagnostic, 
+              Treatment and Discharge. Admission can be considered as a precursor to ICU. It contains the data available 
+              when the patient enters the ICU, demographic information and the initial diagnosis. Diagnostic and Treatment 
+              are the phases in the ICU, which include the data before the ICU as well as the laboratory tests and the prescribed 
+              medication. Discharge is then the post ICU phase. It includes all the previous information as well as the information 
+              recorded at discharge: final diagnosis and procedures. Although procedures can be considered as information from the ICU, 
+              they are only recorded for billing purposes at the end of the stay and are therefore only considered at the last moment.
               
             </span>
           </div>
         </div>
+        <br>
+        <br>
+        <img src="assets/img/Timeline.png" class="mx-auto d-block" style="max-width: 100%;height: auto;">
       </div>
     </section><!-- End Pipeline Section -->
 
