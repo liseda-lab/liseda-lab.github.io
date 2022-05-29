@@ -54,7 +54,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#motivation">Motivation</a></li>
           <li class="nav-link scrollto"><a href="#approach">Our Approach</a></li>
-          <li><a class="nav-link scrollto" href="#results">Results</a></li>
+          <li><a class="nav-link scrollto" href="#conclusions">Conclusions</a></li>
           <li><a class="nav-link scrollto" href="#authors">Authors</a></li>
           <li><a class="nav-link scrollto" href="#funding">Funding</a></li
 
@@ -81,8 +81,9 @@
         </div>
 
         <div class="text-center">
-          <a href="MartaSilva_ExtendingAML_abstract.pdf" class="btn-get-started scrollto">Abstract</a>
-          <a href="MartaSilva_ExtendingAML_poster.pdf" class="btn-get-started scrollto">Poster</a>
+          <a href="MartaSilva_ExtendingAML_abstract.pdf" class="btn-get-started scrollto">Abstract</a> &nbsp; &nbsp;
+          <a href="https://github.com/liseda-lab/holistic-matching-aml" class="btn-get-started scrollto"><img src="assets/img/logos/gh.png" width="20px" padding="0px" />&nbsp;&nbsp;Code</a> &nbsp; &nbsp;
+          <a href="https://2022.eswc-conferences.org/wp-content/uploads/2022/05/paper_115_Silva_et_al.pdf" class="btn-get-started scrollto">In-Use paper</a>
         </div>
       </div>
 
@@ -104,6 +105,9 @@
             </p>
             <p>
               Ontologies provide context to data and are critical to enable interoperability, but there are hundreds of biomedical ontologies with overlapping domains. As they represent different points of view across several domains, their overlap can be found through ontology matching.
+            </p>
+            <p>
+              To build a comprehensive view of the biomedical domain, it is necessary to interconnect multiple ontologies which requires scalability beyond the state-of-the-art, especially considering the large size of many biomedical ontologies, which often hold more than 10,000 classes.
             </p>
           </div>
 
@@ -157,7 +161,7 @@
                   <div class="icon-box">
                     <h3 class="title">AgreementMakerLight (AML)</h3>
                     <p class="description" style="text-align:left">
-                      <i class="bx bx-chevron-right icon-help"></i>Top performing ontology matching system from the Ontology Alignment Evaluation Initiative over the last nine years.
+                      <i class="bx bx-chevron-right icon-help"></i>Top performing ontology matching system from the Ontology Alignment Evaluation Initiative over the last nine years, specially in the tracks of Anatomy, LargeBio and Phenotype.
                     </p>
                     <p class="description" style="text-align:left">
                       <i class="bx bx-chevron-right icon-help"></i>Can only match pairs of ontologies and cannot integrate them.
@@ -218,35 +222,91 @@
       <p>
         Our holistic matching strategy, <b>Clustering Incremental Alignment</b> (CIA) is geared to tackle multi-domain matching problems where the overlap between some ontologies might be small or even non-existent.
       </p>
+      <p>
+        Our strategy combines the excellent perfomance of AML in matching biomedical ontologies with two holistic approaches: search space partition and incremental matching, which will address the scalability in matching multiple ontologies.
+      </p>
     </div>
 
-    <!-- </div> -->
   </section>
+
+  <!-- </div> -->
+
   <!-- End About Section -->
   <center>
     <img src="assets/img/CIA.png" class="img-fluid" width="70%">
   </center>
 
-  <section id="components" class="services section-bg">
-    <div class="row">
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 aos-init aos-animate">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-anchor"></i></i></div>
-          <h4 class="title">Anchoring</h4>
-          <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i>Initial step for all pairwise combinations of ontologies using linear-time matching algorithms.</p>
-          <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i>Determines the overlap between all ontologies with a <b>high degree of confidence</b>.</p>
-          <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i><b>Faster</b> than performing a full pairwise matching strategy.</p>
-          <p>&nbsp;</p>
-          <img src="assets/img/heatmap.png" class="img-fluid" width="400">
-          <!-- <p><i class="bx bx-caret-down icon-help" style="font-size: 30px"></i></p> -->
+  <p>&nbsp;</p>
+
+  <section id="additions" class="faq section-bg">
+
+    <div class="section-title">
+      <h2>Additions to AML</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-8" >
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-chevron-right icon-help"></i>&emsp;&emsp; <b>Convert an RDF alignment into an OWL ontology</b> to use as input for a matching task.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-chevron-right icon-help"></i>&emsp;&emsp; <b>Merge two or more ontologies into a single ontology</b> to combine pairwise alignments into a single one.
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-chevron-right icon-help"></i>&emsp;&emsp; <b>Merge an ontology with all its imports</b> to manage the multiple import statements.
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+
+</section><!-- End Evaluation Section -->
+
+<!-- ======= About Video Section ======= -->
+    <section id="anchoring" class="about-video">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/heatmap.png" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Anchoring</h3>
+            <p class="fst-italic">
+              Defines the semantic and lexical overlap for all ontology pairs by considering:
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Cross-references (direct and shared)</li>
+              <li><i class="bx bx-check-double"></i> Logical definitions (direct and shared)</li>
+              <li><i class="bx bx-check-double"></i> Reused classes and properties</li>
+              <li><i class="bx bx-check-double"></i> Exact string matches</li>
+            </ul>
+            <p>
+              Outputs an affinity matrix that is used for the spectral clustering algorithm and heatmap view helps users decide on the number of clusters.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Video Section -->
+
+
+
+  <section id="components" class="services section-bg">
+
+    <center>
+    <div class="row">
 
       <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 aos-init aos-animate" data-aos-delay="200">
         <div class="icon-box">
           <div class="icon"><i class="bi bi-columns-gap"></i></i></div>
-          <h4 class="title">Spectral Clustering</h4>
-          <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i><b>Uses affinity matrix</b> from Anchoring step as input.</p>
+          <h4 class="title">Partitioning the search space</h4>
+          <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i><b>Spectral Clustering algorithm uses affinity matrix</b> from Anchoring step as input.</p>
           <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i><b>Defines groups of ontologies</b> with higher levels of overlap and therefore likely within the same sub-domain.</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
@@ -262,28 +322,16 @@
         <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i>Matching process <b>starts with the pair that has the greatest overlap</b>.</p>
         <p class="description" style="text-align:left;"><i class="bx bx-chevron-right icon-help"></i>Resulting merged ontology is matched against the next ontology in the cluster, and so on until all ontologies in the cluster have been matched.</p>
         <p>&nbsp;</p>
-        <img src="assets/img/something.png" class="img-fluid" width="400">
+        <img src="assets/img/incremental.png" class="img-fluid" width="200">
       </p>
     </div>
   </div>
 
-  <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 aos-init aos-animate" data-aos-delay="200">
-  <div class="icon-box">
-  <div class="icon"><i class="bi bi-cpu"></i></div>
-  <h4 class="title">AI Integration</h4>
-  <p class="description" style="text-align:left;">Ensure that the KG serves as both input to AI methods and also encodes the AI outcomes</p>
-  <p>&nbsp;</p>
-  <p><b>Challenges:</b></p>
-  <p>
-  <ul style="text-align:left;font-size:15px;list-style-type:circle">
-  <li>Diverse types of AI outcomes</li>
-</ul>
-</p>
-</div>
-</div> -->
 </div>
 
 </div>
+
+</center>
 </section><!-- End Evaluation Section -->
 
 
@@ -465,7 +513,7 @@
   <div class="container d-md-flex py-4">
     <div class="me-md-auto text-center text-md-start">
       <div class="credits">
-        <!--<p><a href='https://www.freepik.com/vectors/technology'>Technology vector created by freepik - www.freepik.com</a> . <a href="https://www.freepik.com/vectors/people">People vector created by rawpixel.com - www.freepik.com</a> . Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>-->
+        <p><a href='https://www.freepik.com/vectors/technology'>Technology vector created by freepik - www.freepik.com</a> . <a href="https://www.freepik.com/vectors/people">People vector created by rawpixel.com - www.freepik.com</a> . Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
